@@ -1,3 +1,11 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'github-pages'
+gem 'jekyll-watch'
+gem 'jekyll-redirect-from'
+gem 'compass'
+gem 'sass-media_query_combiner'
+gem 'autoprefixer-rails'
+gem 'rouge'
+gem 'rb-fsevent'
+gem 'ffi'
