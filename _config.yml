@@ -1,23 +1,25 @@
 # Site settings
-title: Jim Myhrberg (jimeh)
-person_name: Jim Myhrberg
-person_nickname: jimeh
-email: pbagnpg\100wvzru\056zr
-mailto: "&#109;&#97;&#105;&#108;&#116;&#111;&#58;%63%6s%6r%74%61%63%74@%6n%69%6q%65%68.%6q%65"
-description: Crazy-Ass Software Engineering Mercenary
+title: Pranit Bauva (pranitbauva1997)
+person_name: Pranit Bauva
+person_nickname: pranitbauva1997
+email: pranit@bauva.com
+mailto: "pranit@bauva.com"
+description: Sportsman turned into Programmer and Mathematician
 baseurl: "" # the subpath of your site, e.g. /blog/
 hostname: pranitbauva1997.github.io
 permalink: /:title/
 
-blog_url: https://jimeh.io/
+blog_url: https://pranitbauva1997.github.io/
 cv_url: http://assets.jimeh.me/jim-myhrberg-cv.pdf
 vcard_url: http://assets.jimeh.me/jim-myhrberg.vcf
-twitter_username: jimeh
-github_username: jimeh
-linkedin_username: jimeh
-facebook_username: jimeh
-flickr_username: jimeh
-lastfm_username: jimeh
+twitter_username: pranitbauva1997
+github_username: pranitbauva1997
+# linkedin_username: jimeh
+facebook_username: pranit.bauva
+# flickr_username: jimeh
+# lastfm_username: jimeh
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+exclude: ['vendor/', '_site/', '.sass-cache/', '_local_config.yml', '.bundle/']
