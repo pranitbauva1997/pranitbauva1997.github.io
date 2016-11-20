@@ -38,7 +38,7 @@
 }
 
 .site-title {
-  font-size: 47px;
+  font-size: 40px;
   position: relative;
 
   .site-name {
@@ -47,6 +47,7 @@
   }
 
   .site-nickname {
+    font-size: 20px;
     color: $nickname-color;
     text-transform: lowercase;
   }
@@ -56,14 +57,14 @@
     color: $sub-title-color;
     text-transform: uppercase;
     position: absolute;
-    top: 49px;
+    top: 46px;
     left: 11px;
   }
 }
 
 .site-links {
   font-size: 22px;
-  padding: 2px 0px 0px 6px;
+  padding: 2px 2px 2px 6px;
 
   a {
     float: left;
