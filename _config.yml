@@ -38,7 +38,7 @@ owner:
   name: Pranit Bauva
   avatar: bio-photo.jpg
   email: pranit@bauva.com
-  disqus-shortname:
+  disqus-shortname: bauva
   twitter: pranitbauva1997
   facebook: pranit.bauva
   github: pranitbauva1997
@@ -56,3 +56,5 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
+
+comments: true
