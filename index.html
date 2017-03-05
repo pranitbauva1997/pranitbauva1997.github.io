@@ -1,23 +1,12 @@
 ---
-layout: default
+layout: page
+title: Latest Posts
+excerpt: "A simple and clean responsive Jekyll theme for words and photos."
+search_omit: true
 ---
-<header class="site-header" style="backgroud-image: url({{ "img/cover.jpg" | prepend: site.baseurl }})">
-  <div class="site-header-container">
-    <img class="site-avatar" alt="Pranit Bauva" src="{{ "/img/profile.jpg" | prepend: site.baseurl }}">
-    <span class="content">
-      <span class="site-title">
-        <span class="site-name">{{ site.person_name }}</span>
-        <span class="site-nickname">({{ site.person_nickname }})</span>
-        <span class="site-description">{{ site.description }}</span>
-      </span>
-      <div class="site-links">
-        <a href="mailto:{{ site.email }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'email', this.href]);"><i class="fa fa-envelope"></i><span class="link-text">pranit@bauva.com</span></a>
-        <a href="https://twitter.com/{{ site.twitter_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'twitter', this.href]);"><i class="fa fa-twitter"></i><span class="link-text">twitter</span></a>
-        <a href="https://github.com/{{ site.github_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'github', this.href]);"><i class="fa fa-github"></i><span class="link-text">github</span></a>
-        <a href="{{ site.blog_url }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'blog', this.href]);"><i class="fa fa-medium"></i><span class="link-text">blog</span></a>
-        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'linkedin', this.href]);"><i class="fa fa-linkedin"></i><span class="link-text">linkedin</span></a>
-        <a href="https://github.com/pranitbauva1997/resume/raw/master/resume.pdf" onclick="_gaq.push(['_trackEvent', 'download', 'vcard', this.href]);"><i class="fa fa-file-text-o"></i><span class="link-text">cv (pdf)</span></a>
-      </div>
-    </span>
-  </div>
-</header>
+
+<ul class="post-list">
+{% for post in site.posts limit:10 %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>

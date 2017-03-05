@@ -1,20 +1,59 @@
-# Site settings
-title: Pranit Bauva (pranitbauva1997)
-person_name: Pranit Bauva
-person_nickname: pranitbauva1997
-email: pranit@bauva.com
-description: Programmer and Mathematician
-baseurl: "" # the subpath of your site, e.g. /blog/
-hostname: pranitbauva1997.github.io
-permalink: /:title/
+# Site wide configuration
 
-blog_url: https://medium.com/@pranit.bauva
-twitter_username: pranitbauva1997
-github_username: pranitbauva1997
-linkedin_username: pranitbauva
-facebook_username: pranit.bauva
+title: Site Title
+locale: en_US
+description: Describe your website here.
+logo: site-logo.png
+search: true
+url: http://localhost:4000
 
-# Build settings
-markdown: kramdown
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
 highlighter: rouge
-exclude: ['vendor/', '_site/', '.sass-cache/', '_local_config.yml', '.bundle/']
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+
+mathjax: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Your Name
+  avatar: bio-photo.jpg
+  email: you@email.com
+  disqus-shortname:
+  twitter: #username
+  facebook: #username
+  github: #username
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:

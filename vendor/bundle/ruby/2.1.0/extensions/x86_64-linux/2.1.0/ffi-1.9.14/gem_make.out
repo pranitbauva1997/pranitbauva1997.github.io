@@ -41,5 +41,5 @@ compiling LastError.c
 linking shared-object ffi_c.so
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20161120-30267-4h1t3x
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20170305-11478-11le3yv
 installing default ffi_c libraries
