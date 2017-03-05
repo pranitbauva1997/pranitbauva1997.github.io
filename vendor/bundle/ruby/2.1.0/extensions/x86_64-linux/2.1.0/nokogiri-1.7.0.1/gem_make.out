@@ -1,0 +1,79 @@
+/usr/bin/ruby2.1 extconf.rb --use-system-libraries
+checking if the C compiler accepts ... yes
+Building nokogiri using system libraries.
+pkg-config could not be used to find libxslt
+Please install either `pkg-config` or the pkg-config gem per
+
+    gem install pkg-config -v "~> 1.1.7"
+
+pkg-config could not be used to find libexslt
+Please install either `pkg-config` or the pkg-config gem per
+
+    gem install pkg-config -v "~> 1.1.7"
+
+WARNING: libxml2 version 2.9.3 or later is highly recommended, but proceeding anyway.
+checking for xmlParseDoc() in libxml/parser.h... yes
+checking for xsltParseStylesheetDoc() in libxslt/xslt.h... no
+checking for xsltParseStylesheetDoc() in -lxslt... no
+checking for xsltParseStylesheetDoc() in -llibxslt... no
+-----
+libxslt is missing.  Please locate mkmf.log to investigate how it is failing.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/usr/bin/ruby2.1
+	--help
+	--clean
+	--use-system-libraries
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--with-xml2-dir
+	--without-xml2-dir
+	--with-xml2-include
+	--without-xml2-include=${xml2-dir}/include
+	--with-xml2-lib
+	--without-xml2-lib=${xml2-dir}/lib
+	--with-libxml-2.0-config
+	--without-libxml-2.0-config
+	--with-pkg-config
+	--without-pkg-config
+	--with-xslt-dir
+	--without-xslt-dir
+	--with-xslt-include
+	--without-xslt-include=${xslt-dir}/include
+	--with-xslt-lib
+	--without-xslt-lib=${xslt-dir}/lib
+	--with-libxslt-config
+	--without-libxslt-config
+	--with-exslt-dir
+	--without-exslt-dir
+	--with-exslt-include
+	--without-exslt-include=${exslt-dir}/include
+	--with-exslt-lib
+	--without-exslt-lib=${exslt-dir}/lib
+	--with-libexslt-config
+	--without-libexslt-config
+	--with-xsltlib
+	--without-xsltlib
+	--with-libxsltlib
+	--without-libxsltlib
+
+extconf failed, exit code 1
