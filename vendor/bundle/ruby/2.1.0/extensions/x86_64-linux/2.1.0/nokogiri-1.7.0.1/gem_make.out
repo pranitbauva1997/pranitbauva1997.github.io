@@ -1,79 +1,164 @@
 /usr/bin/ruby2.1 extconf.rb --use-system-libraries
 checking if the C compiler accepts ... yes
 Building nokogiri using system libraries.
-pkg-config could not be used to find libxslt
-Please install either `pkg-config` or the pkg-config gem per
-
-    gem install pkg-config -v "~> 1.1.7"
-
-pkg-config could not be used to find libexslt
-Please install either `pkg-config` or the pkg-config gem per
-
-    gem install pkg-config -v "~> 1.1.7"
-
 WARNING: libxml2 version 2.9.3 or later is highly recommended, but proceeding anyway.
 checking for xmlParseDoc() in libxml/parser.h... yes
-checking for xsltParseStylesheetDoc() in libxslt/xslt.h... no
-checking for xsltParseStylesheetDoc() in -lxslt... no
-checking for xsltParseStylesheetDoc() in -llibxslt... no
------
-libxslt is missing.  Please locate mkmf.log to investigate how it is failing.
------
-*** extconf.rb failed ***
-Could not create Makefile due to some reason, probably lack of necessary
-libraries and/or headers.  Check the mkmf.log file for more details.  You may
-need configuration options.
+checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
+checking for exsltFuncRegister() in libexslt/exslt.h... yes
+checking for xmlHasFeature()... yes
+checking for xmlFirstElementChild()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetValidStructuredErrors()... yes
+checking for xmlSchemaSetValidStructuredErrors()... yes
+checking for xmlSchemaSetParserStructuredErrors()... yes
+creating Makefile
 
-Provided configuration options:
-	--with-opt-dir
-	--without-opt-dir
-	--with-opt-include
-	--without-opt-include=${opt-dir}/include
-	--with-opt-lib
-	--without-opt-lib=${opt-dir}/lib
-	--with-make-prog
-	--without-make-prog
-	--srcdir=.
-	--curdir
-	--ruby=/usr/bin/ruby2.1
-	--help
-	--clean
-	--use-system-libraries
-	--with-zlib-dir
-	--without-zlib-dir
-	--with-zlib-include
-	--without-zlib-include=${zlib-dir}/include
-	--with-zlib-lib
-	--without-zlib-lib=${zlib-dir}/lib
-	--with-xml2-dir
-	--without-xml2-dir
-	--with-xml2-include
-	--without-xml2-include=${xml2-dir}/include
-	--with-xml2-lib
-	--without-xml2-lib=${xml2-dir}/lib
-	--with-libxml-2.0-config
-	--without-libxml-2.0-config
-	--with-pkg-config
-	--without-pkg-config
-	--with-xslt-dir
-	--without-xslt-dir
-	--with-xslt-include
-	--without-xslt-include=${xslt-dir}/include
-	--with-xslt-lib
-	--without-xslt-lib=${xslt-dir}/lib
-	--with-libxslt-config
-	--without-libxslt-config
-	--with-exslt-dir
-	--without-exslt-dir
-	--with-exslt-include
-	--without-exslt-include=${exslt-dir}/include
-	--with-exslt-lib
-	--without-exslt-lib=${exslt-dir}/lib
-	--with-libexslt-config
-	--without-libexslt-config
-	--with-xsltlib
-	--without-xsltlib
-	--with-libxsltlib
-	--without-libxsltlib
+make "DESTDIR=" clean
 
-extconf failed, exit code 1
+make "DESTDIR="
+compiling xml_text.c
+compiling xml_attribute_decl.c
+compiling html_entity_lookup.c
+compiling xml_schema.c
+compiling xml_syntax_error.c
+compiling xml_processing_instruction.c
+compiling html_element_description.c
+In file included from /usr/include/ruby-2.1.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./html_element_description.h:4,
+                 from html_element_description.c:1:
+html_element_description.c: In function ‘get_description’:
+html_element_description.c:252:40: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+   return Data_Wrap_Struct(klass, 0, 0, (void *)description);
+                                        ^
+/usr/include/ruby-2.1.0/ruby/ruby.h:1019:35: note: in definition of macro ‘Data_Wrap_Struct’
+     rb_data_object_alloc((klass),(sval),(RUBY_DATA_FUNC)(mark),(RUBY_DATA_FUNC)(free))
+                                   ^
+compiling xml_element_content.c
+compiling xml_xpath_context.c
+compiling xml_document_fragment.c
+compiling nokogiri.c
+compiling xml_io.c
+compiling html_document.c
+compiling xml_node.c
+xml_node.c: In function ‘reparent_node_with’:
+xml_node.c:170:7: warning: enumeration value ‘XML_ATTRIBUTE_NODE’ not handled in switch [-Wswitch]
+       switch (reparentee->type) {
+       ^
+xml_node.c:170:7: warning: enumeration value ‘XML_ENTITY_NODE’ not handled in switch [-Wswitch]
+xml_node.c:170:7: warning: enumeration value ‘XML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:170:7: warning: enumeration value ‘XML_DOCUMENT_FRAG_NODE’ not handled in switch [-Wswitch]
+xml_node.c:170:7: warning: enumeration value ‘XML_NOTATION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:170:7: warning: enumeration value ‘XML_HTML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:170:7: warning: enumeration value ‘XML_DTD_NODE’ not handled in switch [-Wswitch]
+xml_node.c:170:7: warning: enumeration value ‘XML_ELEMENT_DECL’ not handled in switch [-Wswitch]
+xml_node.c:170:7: warning: enumeration value ‘XML_ATTRIBUTE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:170:7: warning: enumeration value ‘XML_ENTITY_DECL’ not handled in switch [-Wswitch]
+xml_node.c:170:7: warning: enumeration value ‘XML_NAMESPACE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:170:7: warning: enumeration value ‘XML_XINCLUDE_START’ not handled in switch [-Wswitch]
+xml_node.c:170:7: warning: enumeration value ‘XML_XINCLUDE_END’ not handled in switch [-Wswitch]
+xml_node.c:170:7: warning: enumeration value ‘XML_DOCB_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_ATTRIBUTE_NODE’ not handled in switch [-Wswitch]
+       switch (reparentee->type) {
+       ^
+xml_node.c:188:7: warning: enumeration value ‘XML_ENTITY_NODE’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_DOCUMENT_TYPE_NODE’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_DOCUMENT_FRAG_NODE’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_NOTATION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_HTML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_DTD_NODE’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_ELEMENT_DECL’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_ATTRIBUTE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_ENTITY_DECL’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_NAMESPACE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_XINCLUDE_START’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_XINCLUDE_END’ not handled in switch [-Wswitch]
+xml_node.c:188:7: warning: enumeration value ‘XML_DOCB_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_ELEMENT_NODE’ not handled in switch [-Wswitch]
+       switch (reparentee->type) {
+       ^
+xml_node.c:199:7: warning: enumeration value ‘XML_ATTRIBUTE_NODE’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_CDATA_SECTION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_ENTITY_NODE’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_PI_NODE’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_COMMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_DOCUMENT_TYPE_NODE’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_DOCUMENT_FRAG_NODE’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_NOTATION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_HTML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_DTD_NODE’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_ELEMENT_DECL’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_ATTRIBUTE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_ENTITY_DECL’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_NAMESPACE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_XINCLUDE_START’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_XINCLUDE_END’ not handled in switch [-Wswitch]
+xml_node.c:199:7: warning: enumeration value ‘XML_DOCB_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:167:5: warning: enumeration value ‘XML_CDATA_SECTION_NODE’ not handled in switch [-Wswitch]
+     switch (parent->type) {
+     ^
+xml_node.c:167:5: warning: enumeration value ‘XML_ENTITY_NODE’ not handled in switch [-Wswitch]
+xml_node.c:167:5: warning: enumeration value ‘XML_PI_NODE’ not handled in switch [-Wswitch]
+xml_node.c:167:5: warning: enumeration value ‘XML_COMMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:167:5: warning: enumeration value ‘XML_DOCUMENT_TYPE_NODE’ not handled in switch [-Wswitch]
+xml_node.c:167:5: warning: enumeration value ‘XML_NOTATION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:167:5: warning: enumeration value ‘XML_DTD_NODE’ not handled in switch [-Wswitch]
+xml_node.c:167:5: warning: enumeration value ‘XML_ELEMENT_DECL’ not handled in switch [-Wswitch]
+xml_node.c:167:5: warning: enumeration value ‘XML_ATTRIBUTE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:167:5: warning: enumeration value ‘XML_ENTITY_DECL’ not handled in switch [-Wswitch]
+xml_node.c:167:5: warning: enumeration value ‘XML_NAMESPACE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:167:5: warning: enumeration value ‘XML_XINCLUDE_START’ not handled in switch [-Wswitch]
+xml_node.c:167:5: warning: enumeration value ‘XML_XINCLUDE_END’ not handled in switch [-Wswitch]
+xml_node.c:167:5: warning: enumeration value ‘XML_DOCB_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+compiling xslt_stylesheet.c
+compiling xml_libxml2_hacks.c
+compiling xml_relax_ng.c
+compiling xml_element_decl.c
+compiling html_sax_push_parser.c
+compiling xml_sax_push_parser.c
+compiling xml_reader.c
+compiling xml_comment.c
+compiling xml_entity_reference.c
+compiling xml_document.c
+xml_document.c: In function ‘set_encoding’:
+xml_document.c:182:12: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+       free((char *) doc->encoding); /* this may produce a gcc cast warning */
+            ^
+xml_document.c: In function ‘canonicalize’:
+xml_document.c:535:15: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+       ns[i] = (xmlChar*) ptr;
+               ^
+compiling xml_namespace.c
+xml_namespace.c: In function ‘dealloc_namespace’:
+xml_namespace.c:17:13: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+     xmlFree((xmlChar *)ns->href);
+             ^
+xml_namespace.c:20:13: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+     xmlFree((xmlChar *)ns->prefix);
+             ^
+xml_namespace.c: In function ‘part_of_an_xpath_node_set_eh’:
+xml_namespace.c:67:49: warning: passing argument 1 of ‘Nokogiri_namespace_eh’ from incompatible pointer type
+   return (node->next && ! Nokogiri_namespace_eh(node->next));
+                                                 ^
+xml_namespace.c:27:5: note: expected ‘xmlNodePtr’ but argument is of type ‘struct _xmlNs *’
+ int Nokogiri_namespace_eh(xmlNodePtr node)
+     ^
+compiling html_sax_parser_context.c
+compiling xml_encoding_handler.c
+compiling xml_dtd.c
+compiling xml_entity_decl.c
+compiling xml_sax_parser.c
+compiling xml_sax_parser_context.c
+compiling xml_node_set.c
+compiling xml_cdata.c
+compiling xml_attr.c
+linking shared-object nokogiri/nokogiri.so
+Cleaning files only used during build.
+rm -rf /home/pungi-man/Codes/pranitbauva1997.github.io/vendor/bundle/ruby/2.1.0/gems/nokogiri-1.7.0.1/ports/archives
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20170306-21187-glgw4r/nokogiri
+installing default nokogiri libraries
