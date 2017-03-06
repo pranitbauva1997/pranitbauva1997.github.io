@@ -1,28 +1,60 @@
-# So Simple Theme
+# Pranit Bauva's Website
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the followup to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes/) -- by designer slash illustrator [Michael Rose](http://mademistakes.com).
+Welcome to the website of Pranit Bauva. The look of this website has been
+changed way too many times but this one right now is the final look. Now
+the look isn't going to change and I will focus all my time and energy in
+adding the content to the website.
 
-## Notable features:
+## Theme
 
-* Compatible with Jekyll 3 and GitHub Pages.
-* Responsive templates. Looks good on mobile, tablet, and desktop devices.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations.
-* Optional large feature images for posts and pages.
-* [Custom 404 page](http://mmistakes.github.io/so-simple-theme/404.html) to get you started.
-* Basic [search capabilities](https://github.com/mathaywarduk/jekyll-search)
-* Support for Disqus Comments
+This is the `So Simple Theme`.
+[Here](https://github.com/mmistakes/so-simple-theme) is the github repo
+of the theme. It is good to refer how to add content from that repo and
+it contains valuable posts which demonstrate different use cases.
 
-![screenshot of So Simple Theme](http://mmistakes.github.io/so-simple-theme/images/so-simple-theme-preview.jpg)
+## Setup
 
-See a [live version of So Simple](http://mmistakes.github.io/so-simple-theme/) hosted on GitHub.
+How to go about with setting up:
 
----
+ * Clone the repo
+ * `$ sudo gem install bundler`
+ * `$ bundle install`
 
-## Getting Started
+Congrats! You have the environment setup
 
-So Simple takes advantage of Sass and data files to make customizing easier and requires Jekyll 3.x.
+## Test Locally
 
-To learn how to install and use this theme check out the [Setup Guide](http://mmistakes.github.io/so-simple-theme/theme-setup/) for more information.
+You can test the website locally by various means. Some are:
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mmistakes/so-simple-theme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+ * Serve: You can directly serve the website on localhost by the command
+   `bundle exec jekyll serve` and go to the link `http://127.0.0.1:4000/`
+
+ * Build: You can just build the site by using `bundle exec jekyll build`
+   which will output all the html site in the `_site` directory and then
+   you can browse through the directory and open the respective webpage.
+
+## Travis CI
+
+Always run the command `travis-ci.sh` to test the modifications you have
+done before commiting.
+
+What does this script do?
+
+ * Tries to install all the required bundles.
+ * Tries to build the site locally.
+ * Verifies the integrity of the website with `html-proofer` which can
+   detect broken links, etc.
+
+## Theme Setup
+
+If you want to make changes, then please refer to
+[this link](https://mmistakes.github.io/so-simple-theme/theme-setup/)
+which also describes how to go about to make modifications with the
+website.
+
+## Suggestions
+
+If you have any suggestions for the website, feel free to open up an
+issue token. We can discuss about this and then I will take the necessary
+steps. It would be even better if you could open a PR with the actual
+change and help me!
