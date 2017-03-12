@@ -11,6 +11,12 @@ dual degree (B. Tech + M. Tech) in Engineering. I am a robotics and open
 source enthusiast. I am also a contributor to git. If you have messed
 up your git repository or need source control advice, I am your guy!
 
+As you might have guess, I code a **LOT**. You can follow me on
+[**Github**](https://github.com/pranitbauva1997). I upload most of the code
+that I have written on the github repo though some are in private
+repositories. I have done many projects which you can check out in my
+github profile.
+
 I play volleyball, throwball, handball, football, athletics, ruby and
 many more. I like to exercise to keep myself fit. I was the **Sports
 Captain** of my school [Vissanji Academy](http://vissanjiacademy.com/)
