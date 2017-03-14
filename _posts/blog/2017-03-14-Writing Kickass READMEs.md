@@ -126,6 +126,18 @@ what a method does and how to use it. This will also make sure she
 doesn't write a method to do the same stuff again and thus it would
 reduce your redundancy.
 
+### No mention of how to run tests
+
+Of course you project has tests, otherwise how can you make sure
+that by writing new code, you don't break the old code? Your README
+should contain how to run the test suite. There are tons of different
+test suites available in the market and it is time consuming for people
+to check out your test framework and make guesses as how one could probably
+run it. You should mention how to run individual tests, the whole test
+suite, and how to skip some tests, and if your test suite framework
+doesn't support all of these features, then maybe the one you are using
+should be replaced.
+
 ### No license
 
 Yes, legal matters are important too! Whether you are releasing it
