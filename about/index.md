@@ -26,7 +26,8 @@ to promote open source culture in our campus. We organize workshops
 for Git, Dual Booting fest, GSoC seminar and various other stuffs.
 
 I am also the _**Software Team Head**_ at
-[Swarm Robotics IIT KGP] where I lead the communications team which is
+[Swarm Robotics IIT KGP](http://swarm-iitkgp.github.io/)
+where I lead the communications team which is
 working on decentralized communication for robots.
 
 I am currently a _**Head**_ at
