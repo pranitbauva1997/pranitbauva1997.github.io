@@ -13,4 +13,6 @@ You can also find me on social media:
  * [Facebook](https://www.facebook.com/pranit.bauva)
  * [Twitter](https://twitter.com/pranitbauva1997)
  * [GitHub](https://github.com/pranitbauva1997)
+ * [Medium](https://medium.com/@pranit.bauva)
  * [LinkedIN](https://www.linkedin.com/in/pranitbauva/)
+ * [GitLab](https://gitlab.com/pranitbauva1997)
