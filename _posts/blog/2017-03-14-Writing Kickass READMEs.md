@@ -194,5 +194,5 @@ of Contents`. This way, the README will look more organized and it
 would make reading much easier.
 
 
-Okay, now that I have ranted a lot, I hope you know know
+Okay, now that I have ranted a lot, I hope you know
 **How to Write KickAss READMEs**.
