@@ -41,7 +41,7 @@ So since you have got the viewer interested in trying our your software
 by writing a good introduction, you would now probably piss off her
 by sucking at writing an installation guide.
 
-What a developer should understand that since your development
+What a developer should understand is that since your development
 environment is setup to run that code, doesn't mean everybody's is.
 One should always write the whole installation process for all
 systems that the software supports and it should clearly mention that
@@ -51,7 +51,7 @@ be great to support it in future or something.
 For unix-based systems, one should list out all the ways to install
 the software. Let's take an example of Ubuntu. If you have managed to
 get your software packaged with a `.deb` file and also uploaded it
-upstream so that it can be used with `apt-get`, just awesome!
+upstream so that it can be used with `apt-get`, then that's just awesome!
 
 Sometimes you might be releasing it and then packing the source code
 in a `tar.gz` format, still awesome. In the latter case, it would be
@@ -73,11 +73,11 @@ You don't have a user documentation? Well then how do you expect others
 to use your software. User documentation should be in another file
 or folder (if it is quite big) and should probably be in some kind of
 a format which can be rendered easily. You can either write it in
-markdown format so that it can be easily read on GitHub or you can
-write in `man` pages form for the oldies to read it. But you should
-have it. And that's not it, your README should explicitly point out
-to the documentation and also tell the user how to access it and actually
-read it.
+markdown format or Github wikis so that it can be easily read on
+GitHub or you can write in `man` pages form for the oldies to read it.
+But you should have it. And that's not it, your README should
+explicitly point out to the documentation and also tell the user how
+to access it and actually read it.
 
 Also you can include the very basic use case in the README itself.
 
@@ -87,14 +87,14 @@ If you have the viewer till now and she is thinking of actually
 contributing to your project, then kudos, your project is **awesome**.
 
 A very important part of the contributing guide is to setup the
-development environment. Again in this it is worthwhile to get
+development environment. Again in this, it is worthwhile to get
 into the platform specific information. For eg. Windows will have
 different development environment while Ubuntu will have a different one.
 You should mention what IDE you used or the tools that you used.
 
-Now you project might have some development related dependencies.
+Now your project might have some development related dependencies.
 You should mention about that too. Now finally the viewer can have
-successful setup to actually contribute to your code.
+successful environment setup to actually contribute to your code.
 
 Now, you might be following some conventions for writing your code,
 right? It is worth while to mention the conventions that you have
