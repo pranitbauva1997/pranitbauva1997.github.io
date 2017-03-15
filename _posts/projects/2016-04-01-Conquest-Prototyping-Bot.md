@@ -5,7 +5,7 @@ categories: projects
 excerpt:
 tags: []
 author: pranitbauva1997
-link: "https://github.com/pranitbauva1997/conqest"
+link: "https://github.com/pranitbauva1997/conquest"
 share: true
 
 date: 2016-04-01
