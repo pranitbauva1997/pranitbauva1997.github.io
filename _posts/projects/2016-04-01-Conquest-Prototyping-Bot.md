@@ -11,6 +11,6 @@ share: true
 date: 2016-04-01
 ---
 
-I made this for the prototyping of our event
+I made this for the prototyping of our Computer Vision event
 [Conquest](https://www.robotix.in/event/conquest/) at
 [Robotix 2017](https://2017.robotix.in).
