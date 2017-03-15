@@ -30,7 +30,7 @@ I am also the _**Software Team Head**_ at
 where I lead the communications team which is
 working on decentralized communication for robots.
 
-I am currently a _**Head**_ at
+I am currently an _**Image Processing Head**_ at
 [Technology Robotix Society](https://www.robotix.in/) wherein we try to
 promote robotics culture in our university by organising
 [KRAIG classes](https://www.robotix.in/kraig/),
