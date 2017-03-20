@@ -20,7 +20,7 @@ though some are in private
 repositories. I have done many projects which you can check out in my
 github profile.
 
-I am also an _**Executive Head**_ at
+I am currently an _**Executive Head**_ at
 [Kharagpur Open Source Society](http://kossiitkgp.in/) where we try
 to promote open source culture in our campus. We organize workshops
 for Git, Dual Booting fest, GSoC seminar and various other stuffs.
@@ -30,7 +30,7 @@ I am also the _**Software Team Head**_ at
 where I lead the communications team which is
 working on decentralized communication for robots.
 
-I am currently an _**Computer Vision Head**_ at
+I am also a _**Computer Vision Head**_ at
 [Technology Robotix Society](https://www.robotix.in/) wherein we try to
 promote robotics culture in our university by organising
 [KRAIG classes](https://www.robotix.in/kraig/),
