@@ -110,7 +110,7 @@ in C++ over C is likely a programmer that I really *would* prefer to piss
 off, so that he doesn't come and screw up any project I'm involved with.
 
 In this paragraph, he rants about the problem just like Nishant did but
-in a more aggressive way. But the good thing is that, he also decribes
+in a more aggressive way. But the good thing is that, he also describes
 what specifically is the problem here:
 
 > C++ leads to really really bad design choices. You invariably start using 
@@ -127,7 +127,9 @@ total and utter crap, that may "help" you program, but causes:
 This guy actually cares about giving explanations about why the problem
 exists in the first place. Again whether it is correct or not, is just
 his and readers' opinion. He also goes ahead and gives a solution to
-the problem (which actually works no matter how absurd it might sound):
+the problem (which actually works no matter how absurd it might sound
+to a guy who orgasms on _Object Oriented Programming_ and claims how it has
+helped him to be the "Greatest coder" which placed foot on earth):
 
 > In other words, the only way to do good, efficient, and system-level and
 portable C++ ends up to limit yourself to all the things that are
@@ -138,10 +140,10 @@ idiotic "object model" crap.
 
 At this point of the article I would really like to clarify that while
 mentioning about these articles, I am not validating the truth of what
-you have written, instead I am focussing on _How did you deliver it_. The
+you have written, instead I am focusing on _How did you deliver it_. The
 reason Linus is well respected in the community despite of his extreme
-rude is his ability to convey his ideas properly in a systematic manner
-which makes the reader think that his time wasn't wasted. If you are
+rude behavior, is his ability to convey his ideas properly in a systematic
+manner which makes the reader think that his time wasn't wasted. If you are
 writing a humorous one, make sure your reader has a good laugh at the end,
 if you are writing a serious one, make sure you reader actually gains
 something out of it.
