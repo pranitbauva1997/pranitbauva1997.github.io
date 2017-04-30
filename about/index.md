@@ -10,7 +10,10 @@ I'm a student at [**IIT Kharagpur**](http://www.iitkgp.ac.in/), pursing a
 dual degree (B. Tech + M. Tech) in Engineering. I am a robotics and open
 source enthusiast. I am also a contributor to
 [git](https://github.com/git/git). If you have messed
-up your git repository or need source control advice, I am your guy!
+up your git repository or need source control advice, I am your guy! I
+got selected in the Google Summer of Code program in my first year wherein
+I worked on porting the `git-bisect` shell script to C code so as to do
+my bit in making life of windows developers easier and less frustrating.
 
 As you might have guess, I code a **LOT**. You can follow me on
 [**Github**](https://github.com/pranitbauva1997). I upload most of the code
