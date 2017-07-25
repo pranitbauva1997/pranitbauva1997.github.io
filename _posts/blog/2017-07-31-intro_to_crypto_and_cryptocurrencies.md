@@ -338,3 +338,333 @@ But: you can get the same effect by using transactions to subdivide: create
 new trans. You can consume your coin or pay out two new coins to yourself.
 
 Scrooge coins is still centralized.
+
+## Week 2: How Bitcoin achieves decentralization
+
+### Centralization vs Decentralization
+
+They way bitcoin achieves decentralization is by combination of technical
+and clever incentive engineering.
+
+Decentralization is not all-or-nothing. Best example is e-mail which is
+a decentralized protocol, but dominated by centralized webmail services.
+
+#### Aspects of decentralization
+
+ 1. Who maintains the ledger?
+ 2. Who has authority over which transactions are valid?
+ 3. Who creates new bitcoins?
+ 4. Who determines how the rules of the system change?
+ 5. How do bitcoins acquire exchange value?
+
+Beyond the protocol:
+
+exchanges, wallet software, service providers ...
+
+**Aspects of decentralization in Bitcoin**
+
+*Peer-to-Peer network*:
+ * open to anyone, low barrier to entry
+
+*Mining*:
+ * open to anyone, but inevitable concentration of power
+ * often seen as undesirable
+
+*Updates to software*:
+ * core developers trusted by community, have great power
+
+### Distributed Consensus
+
+**Bitcoin's key challenge**:
+
+Key technical challenge of decentralized e-cash: distributed consensus,
+or how to decentralize ScroogeCoin.
+
+**Why consensus protocols?**
+
+Traditional motivation: reliability in distributed system
+
+*Distributed key-value store* enables various applications like DNS,
+public key directory, stock trades, ... which are all good for altcoins.
+
+*Altcoins*: They are systems built on bitcoins like principles to achieve
+slightly different role, sometimes currency systems sometimes not
+currency systems.
+
+**Defining distributed consensus**
+
+ * The protocol terminates and all correct nodes decide on the same
+   value
+ * This value must have been proposed by some correct node
+
+**How distributed consensus works in bitcoin**
+
+When Alice wants to pay Bob: she broadcasts the transaction to all
+Bitcoin nodes. The transaction has Alice's signature which other nodes
+need in order to know that it came from Alice, it will also contain
+Bob's public key which is his address at where he wants to receive the
+bitcoin and further it contains a hash. This hash is a way for Alice
+to link together this transaction or this coin to her receipt of this
+coin from someone else.
+
+![Week 2_1](/images/blog/cryptocurrency/10.png){:.img-responsive}
+
+Note: In this, Bob is not in this picture. If Bob wants to be notified
+that this transaction has in fact happened then he might want to run a
+peer-to-peer node on the network in order to listen and be sure that
+he has received the bitcoins but it is not required since the bitcoins
+will be his whether he is notified or not.
+
+**What do the nodes want to reach a consensus on?**
+
+Given that a variety of users are broadcasting these transactions to
+the network, what everybody wants to reach consensus on is exactly which
+transactions were broadcast and the order in which they happened.
+
+**How consensus could work in Bitcoin?**
+
+At any given time:
+
+ * All nodes have a sequence of *blocks of transactions* they have
+   reached consensus on
+ * Each node has a set of outstanding transactions it's heard about
+
+![Week 2_2](/images/blog/cryptocurrency/11.png){:.img-responsive}
+
+Although this has things similar to bitcoins, this is not how bitcoins
+exactly work. This is because, doing things in this way is a really
+hard technical problem for a variety of reason.
+
+**Why consensus is hard?**
+
+ * Nodes may crash
+ * Nodes may be malicious
+ * Network is imperfect
+    * Not all pairs of nodes connected
+    * Faults in network
+    * Latency
+
+One particular consequence of high latency is that there is no notion
+of global time. Not all nodes can agree with a particular order of events
+just on basis of timestamps.
+
+**Many impossibility result:**
+
+ 1. Byzantine generals problem
+ 2. Fischer-Lynch-Paterson (deterministic nodes): consensus impossible
+    with a single faulty node
+
+Despite of these, there are still some well known protocols like **Paxos**
+which can never give inconsistant result but can (rarely) get stuck.
+
+**Understanding impossibility results**
+
+ * These results say more about the model than about the problem
+ * The models were developed to study systems like distributed databases.
+
+Bitcoin consensus works better in practice than in theory. Theory is
+still catching up. **BUT** theory is important as it can help predict
+unforeseen attacks.
+
+**Some things Bitcoin does differently**:
+
+ * *Introduces incentives*: Possible only because it's a currency!
+ * *Embraces randomness*:
+    * Does away with the notion of a specific end-point
+    * Consensus happens over long time scales - about 1 hour
+    * Gives a probabilistic model about the verification of transaction
+      over time with exponential growth.
+
+### Consensus without identity: The Block Chain
+
+**Why identity?**
+
+*Pragmatic*: some protocols need node IDs
+
+*Security*: assume less than 50% malicious
+
+**Why don't Bitcoins nodes have identities?**
+
+ * Identity is hard in a P2P sytem - *Sybil attack*
+ * Pseudonymity is a goal of Bitcoin
+
+#### Key Idea: Implicit Consensus
+
+In each round, random node is picked. This node proposes the next block
+in the chain.
+
+Other nodes implicitly accept/reject this block:
+ * by either extending it
+ * or ignoring it and extending chain from earlier block
+
+**Every block contains hash of the block it extends**.
+
+#### Consensus Algorithm (simplified)
+
+ 1. New transactions are broadcast to all nodes
+ 2. Each node collects new transactions into a block
+ 3. In each round a *random* node gets to broadcast its block
+ 4. Other nodes accept the block only if all transactions in it are
+    valid (unspent, valid signatures)
+ 5. Nodes express their acceptance of the block by including its hash
+    in the next block they create
+
+#### What can a malicious node do?
+
+**What can't an attacker not do?**
+
+ * It can't forge a signature thus it can't spend the Bitcoin on behalf
+   of the original owner
+ * While it can purposely choose to ignore verifying a transaction which
+   can cause delays but then that transaction will be taken up by some
+   other node and thus it can be signed.
+
+**Double Spending Attack:**
+
+When Alice pays Bob a Bitcoin, that means she will create a transaction
+from her address to Bob's public address. She broadcasts it to the
+network and let's say some honest node creates this block, listens to
+the transaction and includes it in that block.
+
+![Week 2_3](/images/blog/cryptocurrency/12.png){:.img-responsive}
+
+![Week 2_4](/images/blog/cryptocurrency/13.png){:.img-responsive}
+
+Summarizing:
+ * Protection against invalid transactions is cryptographic, but enforced
+   by consensus
+ * Protection against double-spending is purely by consensus
+ * You're never 100% sure a transaction is in consensus branch. Guarantee
+   is probabilistic
+
+### Incentives and Proof of Work
+
+**Assumption of honesty is problematic**.
+
+Can we give nodes *incentives* for behaving honestly?
+
+![Week 2_5](/images/blog/cryptocurrency/14.png){:.img-responsive}
+
+#### Incentive 1: block reward
+
+Creator of block gets to
+ * include *special coin-created transaction* in the block
+ * choose recipient address of this transaction
+
+Value is fixed: current 25 BTC, halves every 4 years
+
+Block creator gets to "collect" the reward only if the block ends up on
+long-term consensus branch!
+
+**There's a finite supply of Bitcoins**
+
+![Week 2_6](/images/blog/cryptocurrency/15.png){:.img-responsive}
+
+#### Incentive 2: transaction fees
+
+ * Creator of transaction can choose to make output value less than
+   input value
+ * Remainder is a transaction fee and goes to the block creator
+ * Purely voluntary, like a tip
+
+**Remaining Problems**
+
+ 1. How to pick a random node?
+ 2. How to avoid a free-for-all due to rewards?
+ 3. How to prevent Sybil attacks?
+
+The solution to the problems is **Proof of Work**.
+
+#### Proof of Work
+
+To approximate selecting a random node: select  nodes in proportion to
+a resource that no one can monopolize (we hope)
+
+ * In proportion to computing power: proof-of-work
+ * In proportion to ownership: proof-of-stake
+
+#### Equivalent views of proof of work
+
+ 1. Select nodes in proportion to computing power
+ 2. Let nodes compete for right to create block
+ 3. Make it moderately hard to create new identities
+
+#### Proof of work in Bitcoin
+
+**Hash Puzzles**
+
+![Week 2_7](/images/blog/cryptocurrency/16.png){:.img-responsive}
+
+##### PoW property 1: difficult to compute
+
+It takes around
+$$ 10^{ 20 } $$ hashes/block
+
+##### PoW property 2: parameterizable cost
+
+Nodes automatically re-calculate the target every two weeks
+
+Goal: *average* time between blocks = 10 mins
+
+This means that the next time one tries to hash a block is not just
+dependent on it's own computing power but it mainly depends on the
+computing power of other people. To tell it more subtly:
+
+`Prob(Alice wins next block) = fraction of global hash power she controls`
+
+**Key security assumption**:
+
+Attacks infeasible if majority of miners *weighted by hash power* follow
+the protocol.
+
+**Solving hash puzzles is probabilistic**:
+
+![Week 2_8](/images/blog/cryptocurrency/17.png){:.img-responsive}
+
+##### PoW property 3: trivial to verify
+
+Nonce must be published as part of block.
+
+Other miners simply verify that
+$$ H(nonce || prevhash || tx || ... || tx) < target $$
+
+### Putting It All Together
+
+#### Mining Economics
+
+$$ Profit = reward - hardware - electricity $$
+
+**Complications**:
+
+ * fixed vs. variable costs
+ * reward depends on global hash rate
+
+**Summary**:
+ * Identities
+ * Transactions
+ * P2P network
+ * Block chain & consensus
+ * Hash Puzzles & Mining
+
+#### Bitcoin is bootstrapped
+
+There is a circle of dependency between `security of block chain`,
+`health of mining ecosystem`, and `value of currency`.
+
+![Week 2_9](/images/blog/cryptocurrency/18.png){:.img-responsive}
+
+It is a very tricky process as to how all of these three things were
+acquired by the Bitcoin system in an interdependent manner. It was of
+course fueled by media.
+
+#### What can a "51% attacker" can do?
+
+Steal coins from existing address? NO
+
+Suppress some transactions?
+ * From the block chain, yes
+ * From the P2P network, no
+
+Change the block reward? No
+
+Destroy confidence in Bitcoin? YES
