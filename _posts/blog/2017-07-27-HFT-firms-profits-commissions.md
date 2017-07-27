@@ -20,7 +20,7 @@ by the mood swings of the market but instead they just profit like
 brokerages. In fact, the way their algorithms work for profits are exactly
 like commission business except that their commissions are big fat
 paychecks. Now let's describe how all this happens. Each part is important
-to the whole story so please bear with me, if it sees a long post.
+to the whole story so please bear with me, if it seems a long post.
 
 **Note**: Everything written is a very simplistic model. In order to get
 accurate information, please read the books given at the end.
