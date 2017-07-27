@@ -141,6 +141,8 @@ is a zero-sum game which doesn't create an economic value for the society.
 Well these days HFT trading is gone far. There are algorithms to predict
 what algorithms are doing but thats a story of another time!
 
+Click [here to read the medium article](https://medium.com/@pranit.bauva/hft-firms-profits-are-like-commissions-d2112c203800).
+
 To know more read the books,
 [**Trading and Exchanges**](https://www.goodreads.com/book/show/1290158.Trading_and_Exchanges)
 by *Larry Harris* and
