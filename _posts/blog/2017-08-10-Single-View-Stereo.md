@@ -491,4 +491,4 @@ void cv::reprojectImageTo3D()
 {% endhighlight %}
 
 You can find the source code for all of this on
-[github](https://github.com/pranitbauva1997/single-view-stereo).
+[github](https://github.com/Swarm-IITKgp/single-view-stereo).
