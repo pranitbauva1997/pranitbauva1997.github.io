@@ -71,6 +71,7 @@ Now the stack with many trades might look like:
 | Offer    | 2000       | 120     |
 | Bid      | 200        | 110     |
 | Bid      | 500        | 112     |
+{: .table}
 
 Now the exchanges' job is to match up the trades. So the bid offer of 500
 shares at Rs. 112 will be matched up, then 200 shares at 110 and then 1000

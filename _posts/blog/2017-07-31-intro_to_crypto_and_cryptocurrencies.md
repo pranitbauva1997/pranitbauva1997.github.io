@@ -668,3 +668,63 @@ Suppress some transactions?
 Change the block reward? No
 
 Destroy confidence in Bitcoin? YES
+
+### Week 3
+
+#### Bitcoin Transactions
+
+##### An account-based Ledger (not Bitcoin)
+
+If we use an account based ledger wherein we store all the trades that can
+happen then we have something like this:
+
+![Week 3_1](/images/blog/cryptocurrency/19.png){:.img-responsive}
+
+Although the problem with this is that to verify that when the person
+who promises to pay is a big pain because for that we would have to
+traverse the whole history of all transactions. In this system there is
+no way of storing the amount of money a person owns and thus calculating
+the whole list every time a transaction is made is just too much
+computationally intensive. If we try to maintain an account of each person,
+then it would be a sophisticated data structure which would be different
+from the original block chain.
+
+#### A transaction-based Ledger
+
+Bitcoin uses something like this.
+
+![Week 3_2](/images/blog/cryptocurrency/20.png){:.img-responsive}
+
+The first transaction depicts the creation of a new currency. In the second
+transaction, the coins are split into two, Bob is given 17 coins
+while Alice is given 8 coins by herself where,
+$$ 17 + 8 = 25 $$. So this is called as *change address* because the address
+of the transactions owned by Alice have changed. The point is that
+the transaction totally consumes the full money of the previous block.
+Thus it is easy to maintain the transactions as well as the amount of money
+owned by each person.
+
+##### A real deal: A Bitcoin Transaction
+
+![Week 3_3](/images/blog/cryptocurrency/21.png){:.img-responsive}
+
+Three parts:
+ * Metadata
+ * Inputs
+ * Outputs
+
+**Metadata**: Some housekeeping information like size of the transactions,
+number of inputs and the number of outputs. There is the hash of the
+entire transaction, and there is a lock-time parameter.
+
+**Input**: It is an array that have inputs of the same form. The inputs
+specify a previous transaction specifically so they have the hash or
+hash pointer to it and the index of which transaction which you are
+actually claiming and after that there is a signature.
+
+**Outputs**: They have a value of a coin and then there is a recipient
+address.
+
+#### Bitcoin Scripts
+
+
