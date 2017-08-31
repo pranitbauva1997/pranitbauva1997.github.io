@@ -727,4 +727,381 @@ address.
 
 #### Bitcoin Scripts
 
+Each transaction output doesn't just specify a simple public key, but
+instead it specifies a script.
 
+##### An Example
+
+Output "addresses" are really scripts. The most common script in bitcoin
+is to redeem a previous transaction by signing with the correct public
+key. This is what an output address would look like in a script:
+
+```
+OP_DUP
+OP_HASH160
+69e02e18...
+OP_EQUALVERIFY OP_CHECKSIG
+```
+
+Input "address" is also a script. So that's a bit of a script that you
+combine with the output script by concatenation and that gets you a script
+that you have to run successfully to claim a bitcoin.
+
+**To Verify**: Concatenated script must execute completely with no errors.
+
+##### Bitcoin Scripting Language
+
+Design goals:
+ - Built for Bitcoin (inspired by Forth)
+ - Simple, compact
+ - Support for cryptography
+ - Stack-based
+ - Limits on time/memory
+ - No looping
+
+This is not a turing complete language. No looping is there to protect
+the miner from infinite looping submitted by malicious nodes.
+
+##### Bitcoin Script Execution Example
+
+A stack based data structure is the most suitable when you have to
+perform operations on data. Bitcoin scripting also uses the same. When it
+sees a data value, it pushes it on top of the stack. When it sees an
+operation, then it pops the top value of the stack performs the operation
+and then pushes the output on the top of the stack back.
+
+Let's say you want to execute this script:
+```
+<sig> <pubKey> OP_DUP OP_HASH160 <pubKeyHash?> OP_EQUALVERIFY OP_CHECKSIG
+```
+
+So the execution will start with pushing `<sig>` into the stack and then
+`<pubKey>`.
+
+| Stack      |
+|------------|
+| `<pubKey>` |
+| `<sig>`    |
+{: .table}
+
+After that, the operation is `OP_DUP` which is to duplicate the top of
+the stack. So after this operation the stack looks like,
+
+
+| Stack        |
+| ------------ |
+| `<pubKey>`   |
+| `<pubKey>`   |
+| `<sig>`      |
+{: .table}
+
+Then the operation is `OP_HASH160` which means to hash the top value of
+the stack. The stack therefore is,
+
+
+| Stack          |
+| -------------- |
+| `<pubKeyHash>` |
+| `<pubKey>`     |
+| `<sig>`        |
+{: .table}
+
+Then the data value `<pubKeyHash?>`,
+
+
+| Stack           |
+| --------------  |
+| `<pubKeyHash?>` |
+| `<pubKeyHash>`  |
+| `<pubKey>`      |
+| `<sig>`         |
+{: .table}
+
+Then the operation `OP_EQUALVERIFY` which pops the two topmost elements
+and then verifies whether the both are equal, if equal then it removes
+both the values from the stack, otherwise it terminates the execution
+of the script with a negative response for verification.
+
+
+| Stack           |
+| --------------  |
+| `<pubKey>`      |
+| `<sig>`         |
+{: .table}
+
+Now `OP_CHECKSIG` checks whether the signature is valid. It can verify
+signatures without calling special libraries. The input to the signature
+function is the **entire transaction**. After this the remaining things
+will be popped out and nothing is left. If we didn't have any errors, then
+the output is a "yes" which means the transaction is valid.
+
+##### Bitcoin Script Instructions
+
+256 opcodes total (15 disabled, 75 reserved)
+
+ - Arithmetic
+ - If/then
+ - Logic/data handling
+ - Crypto!
+   - Hashes
+   - Signature Verification
+   - Multi-Signature verification
+
+`OP_CHECKMULTISIG`:
+ - Built-in support for joint signatures
+ - Specify _n_ public keys
+ - Specify _t_
+ - Verification requires _t_ signatures
+
+##### Bitcoin scripts in practice (as of 2014)
+
+ - Most nodes whitelist known scripts
+ - 99.9% are simple signature checks
+ - ~0.01% are MULTSIG
+ - ~0.01% are Pay-to-Script-Hash
+ - Remainders are errors, proof-of-burn
+
+##### Proof-of-Burn
+
+It is a script that can never be redeemed. It is provable that those
+coins have been destroyed and they can't be spent again. One can use
+`OP_RETURN` with any arbitrary data and no matter what values you put in
+before, they get permanently stored in the chain.
+
+##### Should Sender specify scripts?
+
+Ideally all senders have to send scripts, but this creates a lot of
+confusion for the user. So a simple hack is to use the hash of a
+redemption script. The sender doesn't need to specify the entire script
+but the sender can specify the hash of the script needed to be redeem
+those coins.
+
+#### Application of Bitcoin Scripts
+
+##### Escrow Transactions
+
+**Problem**
+
+Let's say Alice sells a big order for apples to Bob. Now Alice doesn't
+want to pay until Bob delivers the apples and Bob doesn't want to
+deliver the apples until Alice pays for it.
+
+**Solution**
+
+To solve this problem, we introduce a third party. Alice can create a
+`MULTISIG` transaction that requires two or three people to sign to
+redeem the transaction. So now Alice pays 2-of-3 of Alice, Bob and Judy
+(MULTISIG) and in this point the coins are held in the escrow and the
+two can specify where the coins should go. Bob will be satisfied that
+he is safe sending the goods to Alice, thus he will deliver the apples.
+Then Alice wants to pay Bob for his services, so to release the money
+from the escrow and pay to Bob, they both can sign a transaction releasing
+redeeming the coins from escrow and sending them to Bob and the great
+thing is that Judy had to never get involved. This requires one extra
+transaction on the block chain.
+
+What if Bob didn't send or sent faulty goods? Now Alice doesn't want to
+pay Bob. In this case, Bob won't sign the transaction because he wants
+to defy the claim. So in this case Judy involves and helps in settling
+the dispute. Judy can sign the transaction in whichever direction she
+wants and thus after obtaining 2 signatures, the coins can be transferred
+easily.
+
+##### Green Addresses
+
+**Problem**
+
+Alice wants to pay Bob. Bob can't wait 6 verifications to guard against
+double spends, or is offline completely. So Bob can't go to the block
+chain and verify the transaction.
+
+**Solution**
+
+To solve this, we need to introduce one bank. Alice pays the bank with
+the coins. Now this bank has the trust of the people that it never double
+spends and in return it takes a small part of the transaction. Now
+when Bob comes online, it can immediately ask the bank to pay him the
+coins. This idea puts too much trust on the bank and they have
+historically failed.
+
+##### Efficient micro-payments
+
+**Problem**
+
+Alice wants to pay Bob for each minute of phone service. She doesn't want
+to incur a transaction fee every minute. Since the fees are quite low,
+the transaction costs would seem quite high in comparison.
+
+**Solution**
+
+We can club together many small payments into one payment. We start with
+a `MULTISIG` transaction with an amount which is the highest Alice is
+going to pay which will be signed by Alice and Bob. The first payment
+is then done by Alice to Bob while returning the rest remaining coins
+to herself. After next service Alice signs another transaction in which
+she signs coins for both of the services while paying rest to her. Alice
+will keep sending these transaction to Bob as long as she is using the
+service. These aren't getting published in the block chain but is there
+with Bob. When Alice stop using the service, Bob will take the last
+transaction (which has the highest coins). So technically all of those
+transactions are double-spend.
+
+![22](/images/blog/cryptocurrency/22.png){:.img-responsive}
+
+What is Bob never signs the last transaction?
+
+Now the coins won't move but Alice will be out of coins she initially
+deposited. To avoid this, we use _lock time_. Alice can put up a
+transaction saying "Pay 100 to Alice, LOCK until time _t_" which is to be
+signed by Alice and Bob. The metadata parameter `lock_time` is used to
+specify this, and if contains a non-zero value then the transaction
+can't be published until some time specified by that value in future.
+
+![23](/images/blog/cryptocurrency/23.png){:.img-responsive}
+
+##### More Advanced Scripts
+
+ - Multiplayer Lotteries
+ - Hash pre-image challenges
+ - Coin Swapping protocols
+
+The name for these kind of things is called "smart contracts".
+
+#### Bitcoin Blocks
+
+Why bundle transactions together?
+ - Single unit of work for miners
+ - Limit length of hash-chain of blocks
+   - Faster to verify history
+
+![24](/images/blog/cryptocurrency/24.png){:.img-responsive}
+
+##### The real deal
+
+![25](/images/blog/cryptocurrency/25.png){:.img-responsive}
+
+![26](/images/blog/cryptocurrency/26.png){:.img-responsive}
+
+#### The Bitcoin Network
+
+##### The Bitcoin P2P Network
+
+ - Ad-hoc protocol (runs on TCP port 83330)
+ - Ad-hoc network with random topology
+ - All nodes are equal
+ - New nodes can join at any time
+ - Forget non-responding nodes after 3 hr
+
+##### Joining the Bitcoin P2P network
+
+When you launch a new node and try to connect to a network, you start
+with a simple message to one node that you know about. This node is
+usually called as _seed node_. Once you find your seed node, you send a
+special message `getaddr()` asking to know which all nodes in that node
+connected to and then you can perform his task iteratively and finally
+choose the nodes you want to pair up with.
+
+![27](/images/blog/cryptocurrency/27.png){:.img-responsive}
+
+![28](/images/blog/cryptocurrency/28.png){:.img-responsive}
+
+##### Transaction Propogation (flooding)
+
+This is also called as the gossip protocol. If one node gets to hear
+about a new transaction from a wallet or an exchange, then that node
+tries to tell as many people as it can to whom it is connected to and
+thus this message spreads on the entire network just like people
+gossiping in the real world.
+
+##### Should I relay a proposed transaction?
+
+ - Transaction valid with current block chain
+ - (default) script matches a whitelist
+   - avoid unusual scripts
+ - Haven't seen before
+   - avoid infinite loops
+ - Doesn't conflict with others I've relayed
+   - avoid double-spends
+
+Well behaving nodes implement this, while some nodes might forward
+transactions without validating as well.
+
+##### Race Conditions
+
+Transactions or blocks may conflict
+ - Default behaviour: accept what you hear first
+ - Network position matters
+ - Miners may implement other logic!
+
+##### Block Propogation
+
+Relay a new block when you hear it if:
+ - Block meets the hash target
+ - Block has all valid transactions
+   - Runs all scripts, even if you wouldn't relay
+ - Block builds on current longest chain
+   - Avoid forks
+
+##### Block Propagation Times
+
+![29](/images/blog/cryptocurrency/29.png){:.img-responsive}
+
+##### How big is the network?
+
+ - Impossible to measure exactly
+ - Estimates-up to 1M IP addresses/month
+ - Only about 5k-10k "full nodes"
+   - Permanently connected
+   - Fully-validate
+ - This number may be dropping!
+
+##### Fully-Validating Nodes
+
+ - Permanently connected
+ - Store entire block chain
+ - Hear and forward every node/transaction
+
+##### Tracking the UTXO set
+
+ - Unspent Transaction Output
+   - Everything else can be stored on disk
+ - Currently ~12 M UTXOs
+   - Out of 44M transactions
+ - Can easily fit into RAM
+
+##### Thin/SVP clients (not fully-validating)
+
+Idea: don't store everything
+ - Store block headers only
+ - Request transactions as needed
+   - To verify incoming payment
+ - Trust fully-validating nodes
+
+1000x cost savings! (20Gb - 23Mb)
+
+#### Limitations & Improvements
+
+##### Hard-Coded limits in Bitcoin
+
+ - 10 min average creation time per block
+ - 1 M bytes in a block
+ - 20,000 signature operations per block
+ - 100 M satoshis per bitcoin
+ - 21 M total bitcoins maximum
+ - 50, 25, 12.5 ... bitcoin mining reward
+
+##### Thoroughput limits in Bitcoin
+
+ - 1 bytes/block (10 min)
+ - >250 bytes/transaction
+ - 7 transactions/sec
+
+Compare to:
+ - VISA: 2,000 - 10,000 transactions/sec
+ - PayPal: 50-100 transaction/sec
+
+##### Cryptographic Limits in Bitcoin
+ - Only 1 signature algorithm (ECDSA/P256)
+ - Hard-coded hash functions
+
+Crypto primitives might break by 2040 ...
