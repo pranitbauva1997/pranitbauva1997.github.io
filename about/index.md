@@ -26,12 +26,16 @@ repositories. I have done many projects which you can check out in my
 I am currently an _**Executive Head**_ at
 [Kharagpur Open Source Society](http://kossiitkgp.in/) where we try
 to promote open source culture in our campus. We organize workshops
-for Git, Dual Booting fest, GSoC seminar and various other stuffs.
+for Git, Dual Booting fest, GSoC seminar and various other stuffs. Our
+flagship event is Kharagpur Winter of Code wherein we help students by
+assigning them mentors to guide them when they get started with contributing
+to open source software.
 
 I am also the _**Software Team Head**_ at
 [Swarm Robotics IIT KGP](http://swarm-iitkgp.github.io/)
 where I lead the communications team which is
-working on decentralized communication for robots.
+working on decentralized communication for mobile robots. I also lead the
+Computer Vision team which works on 3D reconstruction and distributed vision.
 
 I am also a _**Computer Vision Head**_ at
 [Technology Robotix Society](https://www.robotix.in/) wherein we try to
