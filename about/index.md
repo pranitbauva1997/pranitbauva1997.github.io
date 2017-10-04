@@ -21,7 +21,7 @@ that I have written on the
 [github repo](https://github.com/pranitbauva1997?tab=repositories)
 though some are in private
 repositories. I have done many projects which you can check out in my
-github profile.
+[github profile](https://github.com).
 
 I am currently an _**Executive Head**_ at
 [Kharagpur Open Source Society](http://kossiitkgp.in/) where we try
@@ -46,6 +46,15 @@ Captain** of my school [Vissanji Academy](http://vissanjiacademy.com/)
 where I learned all of the sports I mentioned above and
 also the captain of the volleyball and throwball team at
 [Mithibai College](http://mithibai.ac.in/).
+
+The external repositories/organisations I contribute to in my free time are:
+ - [Swarm-IITKgp: Maintainer](https://github.com/Swarm-IITKgp)
+ - [kossiitkgp: Maintainer](https://github.com/kossiitkgp)
+ - [git/git](https://github.com/git/git/commits?author=pranitbauva1997)
+ - [haskell/cabal](https://github.com/haskell/cabal/commits?author=pranitbauva1997)
+ - [opencv/opencv](https://github.com/opencv/opencv/commits?author=pranitbauva1997)
+ - [athityakumar/colorls](https://github.com/athityakumar/colorls/commits?author=pranitbauva1997)
+
 
 Also, I like tasting different types of alcohol. I have attended wine
 tasting in [Sula Vineyards](http://www.sulawines.com/) and also beer
