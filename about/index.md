@@ -37,13 +37,6 @@ where I lead the communications team which is
 working on decentralized communication for mobile robots. I also lead the
 Computer Vision team which works on 3D reconstruction and distributed vision.
 
-I am also a _**Computer Vision Head**_ at
-[Technology Robotix Society](https://www.robotix.in/) wherein we try to
-promote robotics culture in our university by organising
-[KRAIG classes](https://www.robotix.in/kraig/),
-[Winter Workshop](https://www.robotix.in/kraig/) and we organize an
-annual technical fest.
-
 I play volleyball, throwball, handball, football, athletics, ruby and
 many more. I like to exercise to keep myself fit. I was the **Sports
 Captain** of my school [Vissanji Academy](http://vissanjiacademy.com/)
