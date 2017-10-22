@@ -393,11 +393,11 @@ the types of log outputs.
 
 ### Log Structure
 
-`heroku log` will give the log output. This output can be divided into four
+`heroku logs` will give the log output. This output can be divided into four
 parts namely timestamp, app/heroku (who is doing that thing), dyno, and
 finally the log message.
 
-One can use `heroku log --tail` to collect logs in realtime.
+One can use `heroku logs --tail` to collect logs in realtime.
 
 For a detailed description about heroku logs, visit
 [here](https://devcenter.heroku.com/articles/logging).
