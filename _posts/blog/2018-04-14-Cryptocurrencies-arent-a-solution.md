@@ -11,15 +11,15 @@ date: 2018-04-14
 ---
 
 Cryptocurrencies were alleged started because public lost trusts in banks
-and other financial institutions as a result of the subprime mortage
+and other financial institutions as a result of the subprime mortgage
 crisis in 2007-08.
 
 In the height of a lot of people trying to claim that cryptocurrencies
 would change how we do banking and financial transactions, I wish to
-express my person thoughts about its limitations (as of now). Of course,
+express my personal thoughts about its limitations (as of now). Of course,
 technology changes and in future, the limitations can be addressed easily.
 This article addresses why banks aren't afraid of cryptocurrencies
-(otherwise they would have made a cryptocurrency of their own before most
+(otherwise, they would have made a cryptocurrency of their own before most
 of the people even came to know about it).
 
 Bitcoin, the most famous cryptocurrency's
@@ -64,7 +64,7 @@ mainly offer savings account and fixed deposit for earning
 interest and current account for businesses to operate where they don't
 charge any interest and neither do they charge any fees for that. With the
 deposits they take, they invest it in debt which people want in the form
-of mortage, vehicle loan, and upto some extent to companies.
+of mortgage, vehicle loan, and up to some extent to companies.
 
 ## Investment banks
 
@@ -101,7 +101,7 @@ person who currently had his money parked in outside waters) would cover
 it in case of default.
 
 So to be historically precise, banking and lending were always done
-peer-to-peer. But something happened where people realized the need of a
+peer-to-peer. But something happened where people realized the need for a
 bank.
 
 As the story of "A Merchant of Venice" unfolds, a rumour spreads out that
@@ -111,24 +111,24 @@ This triggers a default of the debt. I hope you see an issue over here.
 Antonio was a person with an extremely good credit history but he still
 defaulted because of something beyond his control. Peer-to-Peer lending
 had failed because it had failed to **diversify**. What are the chances that
-a ship wrecks? Had Shylock given his money to a million people, the losses
-would be miniscule and could be easily covered up with risk premiums in
+shipwrecks? Had Shylock given his money to a million people, the losses
+would be minuscule and could be easily covered up with risk premiums in
 the interest rate.
 
 ## Federal Reserve of United States
 
 The concept of
 [Federal Reverse Bank](https://en.wikipedia.org/wiki/Federal_Reserve_Bank)
-in United states was borrowed from
-European countries in 1910s. What was happening is that some people with
+in the United States was borrowed from European countries in the 1910s.
+What was happening is that some people with
 malicious intent would declare that a bank is going to go bankrupt even
 though it was actually quite healthy. No bank keeps deposited money in
-lockers and pays interest on them. Instead a major portion of the money is
+lockers and pays interest on them. Instead, a major portion of the money is
 invested. When all the people rushed to take their money out, the bank
 would be unable to clear it's current liabilities and would go bankrupt.
-Federal bank became the liquidity provider since it could print money
+The Federal bank became the liquidity provider since it could print money
 whenever it wished and give it to the bank to cover up for their short-term
-liabilities. This is the current solution to the age old banking problem.
+liabilities. This is the current solution to the age-old banking problem.
 
 ## Subprime Mortgage Crisis
 
@@ -139,9 +139,9 @@ strongly believed in deregulation and that market is the best decider
 of the price. To the blockchain folks, what this means is that a common
 consensus can't always work better for themselves. When dealing with humans,
 we always have to take into account the human emotions like fear and greed
-otherwise we would end up like
+otherwise, we would end up like
 [Long Term Capital Management](https://en.wikipedia.org/wiki/Long-Term_Capital_Management)
-and as much as smart as they were, they ended up loosing money for their
+and as much as smart as they were, they ended up losing money for their
 investors.
 
 I like to have many more such stories to include to prove why a central
@@ -156,12 +156,12 @@ near term and in fact is already showing problems.
 
 ## Dominance in Cryptocurrency market
 
-An article in medium with title
+An article in medium with the title
 ["Stop. Calling. Bitcoin. Decentralized"](https://medium.com/@homakov/stop-calling-bitcoin-decentralized-cb703d69dc27)
 explains the concentration of
-bitcoin miners. Obviously it is not decentralized. Heck, even democracy
+bitcoin miners.Heck, even democracy
 is supposed to be decentralized where "every citizen gets an equal vote",
-but we all know the actual truth. It's time we start accepting this fact
+but we all know how rigged our system is. It's time we start accepting this fact
 for cryptocurrencies as well.
 
 ## Cartels in Cryptocurrency markets
