@@ -85,7 +85,7 @@ fun.
 
 Let's talk about the origin of money, banking system and others. To read
 in more detail about origins of money, read the book
-["The Ascent of Money: A Financial History of the World"](https://www.goodreads.com/book/show/2714607-the-ascent-of-money).
+["The Ascent of Money: A Financial History of the World"](https://www.goodreads.com/book/show/2714607-the-ascent-of-money)
 by [Niall Ferguson](https://www.goodreads.com/author/show/5790.Niall_Ferguson).
 
 ## Elizabethan Era
@@ -167,8 +167,36 @@ for cryptocurrencies as well.
 ## Cartels in Cryptocurrency markets
 
 There are already many cartels in the futures market of Bitcoin operating
-via CME which because of their leveraged position are manipulating
+via CME which because of their
+[leveraged position](https://www.investopedia.com/terms/l/leverage.asp#axzz1gKhHisSM)
+are manipulating
 cryptocurrency prices. There are many such posts in medium explaining this.
+
+## Your broker/exchange isn't decentralized
+
+Many people who buy cryptocurrency from an exchange or broker don't
+realize that the transaction they just did while purchasing the
+asset is in fact the same old transaction. One first deposits money in
+the broker/exchange's bank account. The broker then arranges for the asset
+at market price and takes a commission. After the asset is bought, it can
+be transferred to anyone which is decentralized. Of course, if
+you have mined the cryptocurrency, then you shouldn't be worried about
+this except when to try to sell it in open market.
+
+The brokers/exchanges are unregulated private companies. Their
+balance sheets are not publicly available. You might never know when
+the broker/exchange might go bankrupt. They don't have to follow rules
+like other national exchanges do. They don't invest enough in security
+of their platform. They might be using the idle cash in your account to
+buy cryptocurrency for their account, and guess what, you would never
+know. How is that bad? Well, if the asset prices go down, the broker/
+exchange made a loss on a trade where they didn't even have to put a
+collateral, which could be a serious issue if the broker has a high
+leverage. White collar crimes like
+[spoofing](https://en.wikipedia.org/wiki/Spoofing_(finance))
+in cryptocurrency exchanges are extremely common. And did I mention
+about the huge bid ask spread they charge? Ouch, 3-5% of the trade amount
+would definitely hurt your pockets.
 
 All of these obviously shows that cryptocurrency doesn't solve nor it
 intends to solve such problems and that it should be just seen as a computer
