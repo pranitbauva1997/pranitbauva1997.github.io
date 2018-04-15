@@ -80,7 +80,7 @@ Well, you would be now thinking that all of this can be done through
 blockchain technology (not essentially cryptocurrency), right?
 
 If yes, then you might be a blockchain developer. Kudos, but do read the
-entire thing. I promise it would learn something from it and it would be
+entire thing. I promise you would learn something from it and it would be
 fun.
 
 Let's talk about the origin of money, banking system and others. To read
@@ -105,7 +105,7 @@ peer-to-peer. But something happened where people realized the need for a
 bank.
 
 As the story of "A Merchant of Venice" unfolds, a rumour spreads out that
-Antonio's ships have wrecked and thus he has lost most of this investment.
+Antonio's ships have wrecked and thus he has lost most of his investment.
 This triggers a default of the debt. I hope you see an issue over here.
 
 Antonio was a person with an extremely good credit history but he still
@@ -159,7 +159,7 @@ near term and in fact is already showing problems.
 An article in medium with the title
 ["Stop. Calling. Bitcoin. Decentralized"](https://medium.com/@homakov/stop-calling-bitcoin-decentralized-cb703d69dc27)
 explains the concentration of
-bitcoin miners.Heck, even democracy
+bitcoin miners. Heck, even democracy
 is supposed to be decentralized where "every citizen gets an equal vote",
 but we all know how rigged our system is. It's time we start accepting this fact
 for cryptocurrencies as well.
