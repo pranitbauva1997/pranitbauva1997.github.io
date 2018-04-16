@@ -126,9 +126,14 @@ though it was actually quite healthy. No bank keeps deposited money in
 lockers and pays interest on them. Instead, a major portion of the money is
 invested. When all the people rushed to take their money out, the bank
 would be unable to clear it's current liabilities and would go bankrupt.
-The Federal bank became the liquidity provider since it could print money
+The Federal bank became the liquidity provider since it could inject money
 whenever it wished and give it to the bank to cover up for their short-term
 liabilities. This is the current solution to the age-old banking problem.
+
+I have presented an extremely simple model and of course this isn't quite
+true. If you are interested in reading more about this please read
+[this paper](https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf?la=en&hash=9A8788FD44A62D8BB927123544205CE476E01654)
+published by Bank of England pointed out in the comments below by Rohan.
 
 ## Subprime Mortgage Crisis
 
@@ -198,6 +203,21 @@ leverage. White collar crimes like
 in cryptocurrency exchanges are extremely common. And did I mention
 about the huge bid ask spread they charge? Ouch, 3-5% of the trade amount
 would definitely hurt your pockets.
+
+## High Volatility
+
+The cryptocurrency markets at this point in time are extremely volatile.
+Let's say a merchant wants to sell some goods worth $8000 and
+according to the current BTC price, the buyer has to pay 1 BTC. Now, the
+merchant has an open position in BTC. He can either go in the market and
+quickly sell it and pay the broker/exchange fees of around 3-5% or it
+can carry forward the open position where he runs the risk of the currency
+being devalued. If the next day, BTC prices drop to $7000, then the
+merchant took a loss of $1000. Of course, if you are a derivatives trader,
+you could argue that you can hedge the open position using futures and
+options (one of the strategy being gamma scalping), but then think about
+it again, should a simple merchant be involved in complex derivatives
+transactions (and pay a hefty fee for that too)? Probably no, right?
 
 All of these obviously shows that cryptocurrency doesn't solve nor it
 intends to solve such problems and that it should be just seen as a computer
