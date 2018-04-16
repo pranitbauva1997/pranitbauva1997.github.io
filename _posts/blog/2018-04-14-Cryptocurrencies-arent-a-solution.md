@@ -69,7 +69,7 @@ of mortgage, vehicle loan, and up to some extent to companies.
 ## Investment banks
 
 [Investment banks](https://en.wikipedia.org/wiki/Investment_banking)
-help company's raise money through IPO or bond issues.
+help companies raise money through IPO or bond issues.
 They also have a network of HNIs (High Net worth individuals) and
 institutions who want to park money in order to generate returns. They also
 act as market makers in exchanges and buy/sell assets when no one is
@@ -96,7 +96,7 @@ you are good at history, you would remember that Shakespeare lived in this
 era and if you are one of his fans, you might have read the book
 ["The Merchant in Venice"](https://en.wikipedia.org/wiki/The_Merchant_of_Venice).
 Lending in this era was mostly peer to peer like
-Shylock gave money to Bassanio while Antonio(his friend and a wealthy
+Shylock gave money to Bassanio while Antonio (his friend and a wealthy
 person who currently had his money parked in outside waters) would cover
 it in case of default.
 
@@ -149,7 +149,7 @@ otherwise, we would end up like
 and as much as smart as they were, they ended up losing money for their
 investors.
 
-I like to have many more such stories to include to prove why a central
+There are many more such stories to include to prove why a central
 regulation system is required but then this already long article would
 become even longer. The book "The Ascent of Money" already describes
 why
@@ -207,8 +207,8 @@ would definitely hurt your pockets.
 ## High Volatility
 
 The cryptocurrency markets at this point in time are extremely volatile.
-Let's say a merchant wants to sell some goods worth $8000 and
-according to the current BTC price, the buyer has to pay 1 BTC. Now, the
+Let's say a merchant sold some goods worth $8000 and
+according to the current BTC price, the buyer paid 1 BTC. Now, the
 merchant has an open position in BTC. He can either go in the market and
 quickly sell it and pay the broker/exchange fees of around 3-5% or it
 can carry forward the open position where he runs the risk of the currency
