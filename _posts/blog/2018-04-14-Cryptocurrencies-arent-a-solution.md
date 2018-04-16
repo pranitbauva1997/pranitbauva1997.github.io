@@ -170,7 +170,8 @@ There are already many cartels in the futures market of Bitcoin operating
 via CME which because of their
 [leveraged position](https://www.investopedia.com/terms/l/leverage.asp#axzz1gKhHisSM)
 are manipulating
-cryptocurrency prices. There are many such posts in medium explaining this.
+cryptocurrency prices. [Here](https://web.archive.org/web/20180331133140/https://medium.com/@super.crypto1/4th-dimension-bitcoin-manipulation-cartel-can-it-be-burnt-no-way-c53de65c166a)
+is a medium post explaining this.
 
 ## Your broker/exchange isn't decentralized
 
