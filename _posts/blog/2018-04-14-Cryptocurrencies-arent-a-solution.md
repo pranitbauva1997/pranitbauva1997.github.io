@@ -219,6 +219,17 @@ options (one of the strategy being gamma scalping), but then think about
 it again, should a simple merchant be involved in complex derivatives
 transactions (and pay a hefty fee for that too)? Probably no, right?
 
+## Economic Benefit
+
+Remember, the 51% attack wouldn't be fruitful because the computing power
+would just be wasted and bitcoin's worth will drop? Well, things just
+changed thanks to the introduction of Bitcoin futures in CME. Now you
+can have a short position in bitcoin, perform a 51% attack (even easier
+now because of consolidation of miners) and gain a huge profit. As of now
+bitcoin futures are thinly traded instruments but they are leveraged
+instruments. Anytime in future, if the volume of such contracts increases,
+it will be a good opportunity.
+
 All of these obviously shows that cryptocurrency doesn't solve nor it
 intends to solve such problems and that it should be just seen as a computer
 science marvel solving a lot of problems that already existed with our
