@@ -9,8 +9,8 @@
 - title: Projects
   url: /projects/
 
-- title: Talks
-  url: /talks/
+  #- title: Talks
+  #  url: /talks/
 
 - title: Contact
   url: /contact/
