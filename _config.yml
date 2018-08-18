@@ -14,10 +14,11 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - octopress-paginate
 
 kramdown:
   input: GFM
@@ -25,7 +26,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..2
-  coderay: true
+  syntax_highlighter: rouge
 
 mathjax: true
 
