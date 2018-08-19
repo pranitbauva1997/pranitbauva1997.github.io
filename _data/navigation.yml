@@ -6,11 +6,14 @@
 - title: About
   url: /about/
 
-- title: Projects
-  url: /projects/
+  #- title: Projects
+  #  url: /projects/
 
   #- title: Talks
   #  url: /talks/
+
+- title: Book Summary
+  url: /book_summary/
 
 - title: Contact
   url: /contact/
