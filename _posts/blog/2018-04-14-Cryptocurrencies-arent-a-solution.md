@@ -201,7 +201,8 @@ collateral, which could be a serious issue if the broker has a high
 leverage. White collar crimes like
 [spoofing](https://en.wikipedia.org/wiki/Spoofing_(finance))
 in cryptocurrency exchanges are extremely common. And did I mention
-about the huge bid ask spread they charge? Ouch, 3-5% of the trade amount
+about the huge [bid ask spread](https://www.investopedia.com/terms/b/bid-askspread.asp)
+they charge? Ouch, 3-5% of the trade amount
 would definitely hurt your pockets.
 
 ## High Volatility
@@ -213,7 +214,7 @@ merchant has an open position in BTC. He can either go in the market and
 quickly sell it and pay the broker/exchange fees of around 3-5% or it
 can carry forward the open position where he runs the risk of the currency
 being devalued. If the next day, BTC prices drop to $7000, then the
-merchant took a loss of $1000. Of course, if you are a derivatives trader,
+merchant took a loss of $1000. Of course, if you are a [derivatives trader](https://www.investopedia.com/terms/d/derivative.asp),
 you could argue that you can hedge the open position using futures and
 options (one of the strategy being gamma scalping), but then think about
 it again, should a simple merchant be involved in complex derivatives
