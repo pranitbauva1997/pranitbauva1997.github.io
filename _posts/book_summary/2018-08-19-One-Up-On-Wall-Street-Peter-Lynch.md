@@ -7,7 +7,7 @@ tags: [investing, stocks, fundamental, finance]
 author: pranitbauva1997
 share: true
 
-date: 2016-08-19
+date: 2018-08-19
 ---
 
 A great book which I read in Summers '18 and have started applying his
