@@ -10,7 +10,6 @@ share: true
 date: 2019-01-09
 ---
 
-# How to win friends and influence people - Dale Carnegie
 These are the notes which I took while reading the book titled ***“How to win friends and influence people”*** written by **Dale Carnegie**.
 
 
