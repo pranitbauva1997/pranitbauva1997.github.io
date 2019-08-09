@@ -67,7 +67,7 @@ deposits they take, they invest it in debt which people want in the form
 of mortgage, vehicle loan, and up to some extent to companies.
 
 **Super interesting fact:**
-Have you seen the TV show [Medici Masters of Florence]()?
+Have you seen the TV show [Medici Masters of Florence](https://www.imdb.com/title/tt5057130/)?
 It describes the rise of **The Medici** family in late 1300s starting with
 Giovanni di Medici at inception and Cosimo de Medici in its prime stage.
 The Medici family controlled The Medici Bank which was the first formal
