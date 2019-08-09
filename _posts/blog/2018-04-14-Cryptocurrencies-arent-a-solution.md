@@ -66,6 +66,24 @@ charge any interest and neither do they charge any fees for that. With the
 deposits they take, they invest it in debt which people want in the form
 of mortgage, vehicle loan, and up to some extent to companies.
 
+**Super interesting fact:**
+Have you seen the TV show [Medici Masters of Florence]()?
+It describes the rise of **The Medici** family in late 1300s starting with
+Giovanni di Medici at inception and Cosimo de Medici in its prime stage.
+The Medici family controlled The Medici Bank which was the first formal
+bank the world has ever seen and which has said to introduce the concept of
+credit in this world. They were the ones who fueled renaissance through
+their ingenious financial innovation to support entrepreneurs to take risk
+to earn return and be supported by the other citizens who's deposits will
+be kept at the bank and earn the dividends/interests. They invented the
+concept of limited liability in setting up bank brances as independent from
+their parent entity so as to mitigate risk and having local stakeholders
+who run the operations overseas hold substancial stakes for skin in the
+game. They proved that they could scale the banking business as much
+as to capture and create new trade and convince The Pope to be his personal
+banker in the age where Church was the highest corrupt authority (Middle
+Ages is 1300s).
+
 ## Investment banks
 
 [Investment banks](https://en.wikipedia.org/wiki/Investment_banking)
