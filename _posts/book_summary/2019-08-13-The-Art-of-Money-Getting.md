@@ -43,8 +43,8 @@ date: 2019-08-13
  - **It is the eyes of others and not our own eyes which ruin us.**
  - One doesn't get ahead by vanity and envy.
  - A handful of aristocrats run up a false standard of perfection and in
-   nedeavoring to rise to that standard, we run up a false standard of
-   perfection, and in endeavoring to rise to that standard, we constantly
+   endeavoring to rise to that standard, we run up a false standard of
+   perfection, and thus we constantly
    keep ourselves poor.
  - One cannot accumulate a fortune by taking the road that leads to poverty.
  - One who is accustomed to gratify every whim and caprice, will find it
