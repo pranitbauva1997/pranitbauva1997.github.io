@@ -2,7 +2,7 @@
 
 By **Benajmin Graham** updated with commentary by Jason Zweig
 
-## 4. The Defensive Investor and Common Stocks
+## n5. The Defensive Investor and Common Stocks
 
 ### Investment Merits of Common Stocks
 
@@ -132,4 +132,79 @@ By **Benajmin Graham** updated with commentary by Jason Zweig
    a leading position in the industry.
  - There is no harm in having diversity of opinion and action when
    classifying companies on this criteria.
+
+## 6. Portfolio Policy for the Enterprising Investor: Negative Approach
+
+ - The "aggressive" investor must divide his funds between high grade
+   bonds and high grade common stocks bought at reasonable prices.
+ - The selection of choice should only be restricted to individual's
+   competence, equipment, interest and preferences.
+ - Most useful generalizations for the enterprising investor are of the
+   negative sort like:
+   - Avoid high grade preferred stocks
+   - Avoid inferior types of bonds and preferred stocks unless it can be
+     bought at a bargain of at least 30% under par for high coupon
+     issues.
+   - Avoid foreign-government bonds
+   - Avoid new issues, convertible bonds, lucrative preferreds and
+     common stocks with excellent earnings confined to the recent past.
+
+### Second-Grade Bonds and Preferred Stocks
+
+ - It doesn't make much sense to buy second-grade issues merely for the
+   high return they offer.
+ - Corporations with relatively poor credit standing find it difficult
+   to sell "straight bonds" -- i.e., nonconvertible in public markets.
+ - Almost all nonconvertible bonds of inferior rating represent older
+   issues which are selling at a large discount. Thus they offer the
+   possibility of a substantial gain in principal value if their credit
+   rating improves or interest rates decrease.
+ - The enterprising investor can probably get good grade bonds selling
+   at a large discount wherein both income and chance of appreciation
+   are possible.
+ - It is unwise to buy a bond or a preferred which lacks adequate safety
+   merely because the yield is attractive.
+ - During bad times, the securities which lack adequate safety prove
+   highly susceptible to severe sinking spells and often interest or
+   dividends get suspected and there is a price weakness.
+ - An popular fallacy as a "business investment" involves purchasing
+   a security showing a larger yield than is obtainable on a high-grade
+   issue carrying a correspondingly greater risk.
+ - Second-grade bonds and preferred stocks suffer severe sinking spells
+   in bad markets.
+ - The higher yields on second-grade will prove to have offset those
+   principal losses that were irrecoverable.
+ - If one buys second-grade issues at full prices, he will be worried
+   and discommoded when their price declines precipitately. He also
+   cannot buy enough issues to assure an "average" result, nor is he in
+   position to set aside a portion of his larger income to offset or
+   "amortize" those principal losses which prove to be permanent.
+
+### Foreign Government Bonds
+
+ - Usually a bad investment most visible during the two world wars
+   and a world depression. Yet every few years market conditions are
+   sufficiently favorable to permit the sale of some new foreign issues
+   at price of about par.
+ - This is because if trouble comes, the owner of foreign obligations
+   has no legal or other means of enforcing his claim.
+ - An investor would benefit both his country and himself if he declined
+   such opportunities.
+
+### New Issues Generally
+
+ - Investors should be **weary** of new issues and should be thoroughly
+   examined.
+ - New issues have special salesmanship behind them which calls for a
+   **special degree of sales resistance.** They are also sold under
+   **"favourable market conditions"** which means they are favourable for
+   the seller and less favourable for the buyer. New issues are sold
+   with an underwriting discount which is much higher than brokerage
+   fees.
+ - The effect becomes more important as we move from highest-quality to
+   second-grade senior issues.
+ - Bull-market periods are usually characterized by the transformation
+   of a large number of privately owned businesses into companies with
+   quoted shares.
+
 
