@@ -2,7 +2,7 @@
 
 By **Benajmin Graham** updated with commentary by Jason Zweig
 
-## n5. The Defensive Investor and Common Stocks
+## 5. The Defensive Investor and Common Stocks
 
 ### Investment Merits of Common Stocks
 
@@ -206,5 +206,216 @@ By **Benajmin Graham** updated with commentary by Jason Zweig
  - Bull-market periods are usually characterized by the transformation
    of a large number of privately owned businesses into companies with
    quoted shares.
+
+## 7. Portfolio Policy for the Enterprising Investor: The Positive Side
+
+ - The enterprising investor should devote a fair amount of his
+   attention and efforts twoard obtaining a better than run-of-the-mill
+   investment result.
+
+### Operations in Common Stocks
+
+1. Buying in low markets and selling in high markets
+2. Buying carefully chosen "growth stocks"
+3. Buying bargain issues of various types
+4. Buying into "special situations"
+
+### General Market Policy -- Formula Timing
+
+ - Timing the market has appeared both a simple and feasible idea upon
+   inspecting the periodic fluctuations. The fluctuations that have
+   taken place, while not inconsiderable in extent, would have required
+   a special talent or "feel" for trading to take advantage of them.
+   This is quite different from the intelligence in making sound
+   investment decisions.
+
+### Growth Stock Approach
+
+ - A growth stock may be defined as one that has performed better than
+   average over a period of years in the past and is expected to do so
+   in the future.
+ - Picking growth stocks is quite non-trivial.
+ - Common stocks with good records and apparently good prospects sell
+   at correspondingly high prices. The investor may be right in his
+   judgement of their prospects and still not fare particularly well,
+   merely because he has paid in full (or perhaps overpaid) for the
+   expected prosperity.
+ - Unusually rapid growth cannot keep up forever; when a company has
+   already registered a brilliant expansion, its very increase in size
+   makes a repetition of its achievement more difficult. At some point
+   the growth curve flattens out, and in many cases it turns downward.
+ - The striking thing about growth stocks as a class is their tendency
+   toward wide swings in the market price because **brilliant successes
+   attacks a highly speculative element** into the shares of such
+   companies.
+ - The investment caliber of a company who's credit standing is of the
+   best, and who pay the lowest interest rates on their borrowings may
+   not change over a long span of years, but the risk characteristics
+   of its stock will depend on what happens to it in the stock market.
+   The more enthusiastic the public grows about it, and faster its
+   advance as compared with the actual growth in its earnings, the
+   riskier a proposition it becomes.
+ - The big fortunes from single-company investments are almost always
+   realized by persons who have a close relationship with the particular
+   company -- through employment, family connection, etc -- which
+   justifies them in placing a large part of their resources in one
+   medium and holding on to this commitment through all vicissitudes,
+   despite numerous temptations to sell out at apparently high prices
+   along the way. An investor without such close personal contact will
+   constantly be faced with the question of whether too large a portion
+   of his funds are in this one medium. Each decline will accentuate
+   his problem; and internal and external pressures are likely to force
+   him to take what seems to be a goodly profit, but one far less than
+   the ultimate bonanza.
+
+### Three Recommended Fields for "Enterprising Investment"
+
+To obtain better than average investment results over a long pull requires
+a policy of selection or operation possessing a twofold merit:
+
+1. It must meet objective or rational tests of underlying soundness
+2. It must be different from the policy followed by most investors or
+   speculators.
+
+The three investment approaches that meet these criteria are (each of these
+differ widely from one another and each may require a different type of
+knowledge and temperament by those who attempt it):
+
+1. **The Relatively Unpopular Large Company**
+
+ - The market overvalues stock which have been showing excellent growth
+   or glamour for some reason and undervalues companies that are out of
+   favour because of unsatisfactory developments of a temporary nature.
+ - The enterprising investor should concentrate on the larger companies
+   that are going through a period of unpopularity.
+ - Small companies might also fit this criteria which can increase their
+   earnings but they entail the risk of a definitive loss of profitability
+   and also of protracted neglect by the market in spite of better
+   earnings.
+ - The larger companies also have the resources in capital and brain power
+   carry them through adversity and back to a satisfactory earnings base.
+   Also the market is likely to respond with reasonable speed to any
+   improvement shown.
+ - Companies that are inherently speculative because of widely varying
+   earnings tend to sell both at a relatively high price and at a
+   relatively low multiplier in their good years, and conversely at low
+   prices and high multipliers in their bad years. In such cases, market
+   has sufficient skepticism as to the continuation of the unusually high
+   profits to value them conversatively, and conversely when earnings are
+   low or nonexistent.
+
+2. **Purchase of Bargain Issues**
+
+ - Bargain issues are ones which appear to be worth considerably more
+   than it is selling for.
+ - The two tests for detecting bargain in common stocks:
+   1. *Method of appraisal*: Estimate future earnings and then multiply
+      these by a factor appropriate to the particular
+      issue. If the resultant value is sufficiently above the market price
+      and if the investor has confidence in the technique employed he can
+      tag the stock as a bargain.
+   2. *Value to a private owner*: This value is determined chiefly by
+      expected future earnings in which case the result may be identical
+      with the first. In such cases, pay more attention to the realizable
+      value of the assets with particular emphasis on the net current
+      assets or working capital.
+ - The reasons for undervaluing companies by market:
+   1. Currently disappointing results
+   2. Protracted neglect or unpopularity
+ - But neither of the above causes by itself alone can be relied on as
+   a guide to successful common-stock investment.
+ - Investors would need more than a mere falling off in both earnings
+   and price to give him a sound basis for purchase.
+ - The company could indicate about the reasonable stability of earnings
+   over the past decade or more i.e. no year of earnings deficit -- plus
+   sufficient size and financial strength to meet possible setbacks in
+   the future.
+ - Ideal combination is a large and prominent company selling both well
+   below its past average price and its past average price/earnings
+   multiplier.
+ - The type of bargain issue that can be most readily identified is a
+   common stock that sells for less than company's net working capital
+   alone, after deducting all prior obligations. Such opportunities cease
+   to exist when market has considerably appreciated.
+ - **Bargain Issue pattern in secondary companies**:
+   - A company which isn't a leader in a fairly important industry.
+   - Boom phase makes market think that middle-sized companies are strong
+     enough to weather storms and that it had a better chance for really
+     spectacular expansion but the depression years had a particularly
+     devastating impact on the companies below the first rank either in
+     size or in inherent stability.
+   - The stock market's attitude toward secondary companies tends to be
+     unrealistic and consequently to create a normal times innumerable
+     instances of major undervaluation.
+
+3. **Special Situations or "Workouts"**
+
+ - Number of acquisitions of smaller firms by larger ones has increased
+   because the larger firms thought they needed a diversification of
+   products.
+ - At times it is better to acquire an existing company in the market one
+   wishes to enter rather than to start a new venture from scratch.
+ - While acquiring, it is almost necessary to offer a price considerably
+   above the current level so as to get approval from majority of
+   shareholders.
+ - Such situations often give arbitrage opportunities but one needs a sharp
+   eye and shrewd mind to take the advantage of such opportunities.
+ - The underlying factor for such situations is the tendency of the
+   securities market to undervalue issues that are involved in any sort of
+   complicated legal proceedings.
+ - When the whole public follows some motto like: "*Never buy into a lawsuit*",
+   there are plenty of bargain opportunities created since the prejudice
+   against them holds their prices down to unduly low levels.
+ - These situations require an unsual mentality and equipment and it's
+   difficult to execute such strategies.
+
+### Broader Implications of Our Rules for Investment
+
+ - The aggressive investor must have a considerable knowledge of security
+   values -- enough, in fact, to warrant viewing his security operations
+   as equivalent to a business enterprise. There is no room in this
+   philosophy as a middle ground between passive and aggressive status.
+ - **If you try to place yourself in an intermediate category, it's a
+   compromise that is more likely to produce disappointment than
+   achievement.**
+ - An investor cannot soundly become "half a business-man", expecting
+   thereby to achieve half the normal rate of business profits on your
+   funds.
+ - If one cannot dedicate time, determination or mental equipment to embark
+   upon investing as a quasi-business, they should be satisfied with the
+   excellent return now obtainable from a defensive portfolio and should
+   resist the recurrent temptation to increase this return by deviating
+   into other paths.
+ - The enterprising investor may properly embark upon any security
+   operation for which his training and judgement are adequate and which
+   appears sufficiently promising when measured by established business
+   standards.
+ - Defensive investor should focus on the underlying safety, simplicity
+   of choice, and promise of satisfactory results, in terms of psychology
+   as well as arithmetic.
+ - Investor may expect satisfactory results, on the average, from secondary
+   common stocks only if he buys them for less than their value to a
+   private owner on a bargain basis.
+ - Anyone who can **control** a secondary company, or who is part of a
+   cohesive group with such control, is fully justified in buying the
+   shares on the same basis as if he were investing in a "close corporation"
+   or other private business. The distinction between the position, and
+   consequent investment policy, of insiders and of outsiders become more
+   important as the enterprise itself becomes less important.
+ - In a primary company a single detached share is ordinarily worth as much
+   as a share in a controlling block.
+ - In a secondary company, the average market value of a detached share is
+   substantially less than its worth to a controlling owner.
+ - Because of this fact, the matter of shareholder-management relations
+   and of those between inside and outside shareholders tends to be much
+   more important and controversial in the case of a secondary than in that
+   of a primary.
+ - Many common stocks belong to the boundary area of primary and secondary
+   companies and thus exhibit an intermediate price behavior. It wouldn't
+   be illogical for an investor to buy such an issue at a small discount
+   from its indicated or appraisal value.
+ - **Investor's choice as between the defensive or the aggressive status is
+   of major consequence to him, and he should not allow himself to be
+   confused or compromised in this basic decision.**
 
 
