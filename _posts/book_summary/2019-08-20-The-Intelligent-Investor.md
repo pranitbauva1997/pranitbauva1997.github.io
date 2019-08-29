@@ -418,4 +418,177 @@ knowledge and temperament by those who attempt it):
    of major consequence to him, and he should not allow himself to be
    confused or compromised in this basic decision.**
 
+## 8. The Investor and Market Fluctuations
+
+ - The investor should know about the possibilities of market fluctuations
+   and should be prepared for them financially and psychologically.
+ - He would want to benefit from changes in market levels by making
+   purchases at advantageous prices. While this is inevitable and
+   legitimate, it involves the **very real danger of leading him to
+   speculative attitudes and activities.**
+ - If you want to speculate do so with your eyes open, knowing that you
+   will probably lose money in the end and thus limit the amount at risk
+   and to separate it completely from your investment program.
+
+### Market Fluctuations as a Guide to Investment Decisions
+
+ - An investor can profit from the wide fluctuations in market prices
+   by the **way of timing** and **the way of pricing**.
+ - If an investor places more emphasis on timing in the sense of
+   forecasting, he will end up as a speculator and with a speculator's
+   financial results.
+ - The investor shouldn't take the predictions and stock market
+   forecasting seriously.
+ - While some people can make money by being good forecasters, it's
+   absurd to think that the general public can.
+ - Timing is of great psychological importance to the speculator
+   because he wants to make his profit in a hurry. The idea of waiting
+   a year before his stock moves up is repugnant to him.
+ - But a waiting period is of no consequence to the investor because
+   there is no advantage in sitting on cash to receive some trustworthy
+   signal that the time has come to buy. He enjoys an advantage only
+   if by waiting he succeeds in buying later at a sufficiently lower
+   price to offset his loss of dividend income.
+ - The formulas for buying and selling stocks have worked well over a
+   period is because they have been plausibly adapted to the statistical
+   record of the past. But as their acceptance increases, their
+   reliability tends to diminish. This happens because with the passage
+   of time, market adapts to new conditions wherein the old formula
+   no longer fits and in stock-markets, the popularity of a trading
+   theory has itself an influence on the market's behaviour which
+   detracts in the long run from its profit making possiblities.
+
+### Buy Low and Sell High Approach
+
+ - A classic definition of a shrewd investor: *One who buys in bear
+   market when everyone else was selling, and sells out in a bull market
+   when everyone else was buying.*
+ - Characteristics of a bull market:
+   1. A historically high price level
+   2. High P/E ratio
+   3. Low dividend yields as against bond yields
+   4. Speculation on margin (loan)
+   5. Many offerings of new common-stock issues of poor quality
+ - The longer the bull market lasts, the more people think that bear
+   markets are impossible.
+ - It is recommended to make provisions in changing the proportion of
+   common stocks to bonds in the portfolio according to the level of
+   stock prices appearing less or more attractive by value standard.
+
+### Formula Plans
+
+ - A strategy like selling some common stocks when the market advances
+   substantially does sound logical but often markets continue to
+   become more over-valued and thus such strategies don't earn a better
+   return than dollar cost averaging.
+ - Any approach to moneymaking in the stock market which can be easily
+   described and followed by a lot of people is by its terms too simple
+   and too easy to last
+
+### Market Fluctuations of the Investor's Portfolio
+
+ - A serious investor won't believe that the day-to-day or even month-
+   to-month fluctuations would make him richer or poorer.
+ - **A substantial rise in the market is at once a legitimate reason for
+   satisfaction and a cause for prudent concern, but it may also bring
+   a strong temptation toward imprudent action.**
+ - It is because of human nature to follow crowds rather than by
+   calculation of financial gain or loss, that it is recommended to
+   have some kind of mechanical method for varying the proportion of
+   bonds to stocks in the investor's portfolio. The chief advantage of
+   this is that such a formula will give the investor something to do
+   which would be an outlet for his otherwise too-pent-up energies. If
+   he is the right kind of investor he will take added satisfaction from
+   the thought that his operations are exactly opposite from those of
+   the crowd.
+
+### Business Valuation versus Stock-Market Valuations
+
+ - The holder of marketable shares has many advantages as compared to
+   a private-business owner.
+ - He is a silent partner and his results are entirely dependent on the
+   profits of the enterprise or on a change in the underlying value of
+   its assets.
+ - He can also sell the stock in a matter of minutes when the market
+   is open which is often far removed from the balance-sheet value
+ - The better a company's record and prospects, the less relationship
+   the price of its shares will have to their book value. But the greater
+   the premium above book value, the less certain the basis of
+   determining its intrinsic value i.e. the more this "value" will
+   depend on the changing moods and measurements of the stock market.
+   The more successful the company, the greater fluctuations in the
+   price of its shares.** The better the quality of a common stock, the
+   *more speculative* it is likely to be.** Such losses do not indicate
+   any doubt about the long-term growth of the company but they reflect
+   a lack of confidence in the premium valuation that the stock market
+   itself had placed on these excellent prospects.
+ - **A stock does not become a sound investment merely because it can be
+   bought at close to its asset value. The investor should demand, in
+   addition, a satisfactory ratio of earnings to price, a sufficiently
+   strong financial position, and the prospect that its earnings will
+   at least be maintained over the years.** Once the investor is willing
+   to forgo brilliant prospects i.e. better than average expected
+   growth, he will have no difficulty in finding a wide selection of
+   issues meeting this criteria.
+ - An investor who has picked stocks at their book value can take a
+   much more independent and detached view of the stock market
+   fluctuations than those who have paid high multipliers of both
+   earnings and tangible assets as long as the earning power of his
+   holdings remains satisfactory.
+ - Most businesses change in character and quality over the years more
+   often for the worse. One must give his companies' performance a
+   hard look from time to time.
+ - **The true investor scarcely ever is forced to sell his shares, and
+   at all other times he is free to disregard the current price
+   quotation. He need pay attention to it and act upon it only to the
+   extent that it suits his book, and no more. Thus the investor who
+   permits himself to be stampeded or unduly worried by unjustified
+   market declines in his holdings is perversely transforming his basic
+   advantage into a basic disadvantage. That man would be better off if
+   his stocks had no market quotation at all, for he would then be
+   spared the mental anguish caused him by other persons' mistakes of
+   judgement.**
+ - It is self-deception to tell yourself that you have suffered no
+   shrinkage in value merely because your securities have no quoted
+   market at all.
+ - With listed common stocks, the investor has the benefit of the stock
+   market's daily and changing appraisal of his holdings, for whatever
+   that appraisal may be worth, and second, that the investor is able
+   to increase or decrease his investment at the market's daily figure
+   **if he chooses**. Thus the existence of a quoted market gives the
+   investor certain options that he does not have if his security is
+   unquoted. But it does not impose the current quotation on an investor
+   who prefers to take his idea of value from some other source.
+ - The shrewd investor would be happy to sell out to Mr. Market when
+   he quotes a ridiculously high price, and equally happy to buy from
+   him when his price is low. But the rest of the time, he is wise
+   enough to take that time to form his own ideas of the value of his
+   holdings based on full reports from the company about its operations
+   and financial position.
+
+### Summary
+
+ - The speculator's primary interest lies in anticipating and profiting
+   from market fluctuations. The investor's primary interest lies in
+   acquiring and holding suitable securities at suitable prices.
+ - An investor shouldn't regularly hold off buying until low market
+   levels appear, because this may involve a long wait, very likely
+   the loss of income and the possible missing of investment opportunities.
+   It is better to buy stock whenever you have the money to put into
+   stocks except when the general market level is much higher than can
+   be justified.
+ - The work of many intelligent minds constantly engaged in the field of
+   sector rotation tends to be self-neutralizing and self-defeating
+   over the years.
+ - The investor must see his management team successful by comparing
+   it to the long-range trend of the average to test the effectiveness
+   of a company's management and the soundness of its attitude towards
+   the owner of the business.
+ - Price fluctuations of convertible bonds and preferred stocks are the
+   resultant of these factors:
+   1. Variations in the price of the related common stock
+   2. Variations in the credit standing of the company
+   3. Variations in general interest rates
+ - Investing isn't about beating other at their game. It's about
+   controlling yourself at your own game.
 
