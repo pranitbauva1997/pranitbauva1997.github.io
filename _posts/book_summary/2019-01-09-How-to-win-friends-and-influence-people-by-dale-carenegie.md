@@ -40,13 +40,13 @@ These are the notes which I took while reading the book titled ***“How to win 
 ## Principle 1: Don’t criticize, condemn, or complain
 
 
-- People don’t criticize themselves for anything, or matter how wrong it may be.
+- People don’t criticize themselves for anything, no matter how wrong it may be.
 - Criticism is futile because it puts a person on the defensive and usually makes him strive to justify himself. Criticism is dangerous, because it wounds a person’s precious pride, hurts his sense of importance, and arouses resentment.
 - B. F. Skinner proved through his experiments that an animal rewarded for good behaviour will learn much more rapidly and retain what it learns far more effectively than an animal punished for bad behaviour.
 - If you want to change others and feel that they really need to, first be selfish and try to improve yourself. It’s also a lot less dangerous.
 - Any fool can criticize, condemn and complain and most fools do. But it takes character and self-control to be understanding and forgiving.
 - Carlyle said, “A great man shows his greatness by the way he treats little men.”
-- Instead of condemning people, let’s try to understanding them. Let’s try to figure out why they do what they do. That’s a lot more profitable and intriguing than criticism; and it breeds sympathy, tolerance and kindness. “To know is to forgive all.”
+- Instead of condemning people, let’s try to understand them. Let’s try to figure out why they do what they do. That’s a lot more profitable and intriguing than criticism; and it breeds sympathy, tolerance and kindness. “To know is to forgive all.”
 
 
 ## Principle 2: Give honest and sincere appreciation
