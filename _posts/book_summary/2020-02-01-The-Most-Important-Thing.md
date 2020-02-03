@@ -86,3 +86,24 @@ By **Howard Marks**.
 
 
 
+## Value
+
+- Value investors aim to come up with a security's current intrinsic value and buy when the price is lower, and growth investors try to find securities whose value will increase rapidly in the future.
+- To value investors, an asset isn't an ephemeral concept you invest in because you think it's attractive (or think others will find it attractive). It's a tangible object that should have an intrinsic value capable of being ascertained, and if it can be bought below its intrinsic value, you might consider doing so. Thus, intelligent investing has to be built on estimates of intrinsic value. Those estimates must be derived rigorously, based on all of the available information.
+- The quest in value investing is for cheapness. Value investors typically look at financial metrics such as earnings, cash flow, dividends, hard assets and enterprise value and emphasize buying cheap on these bases. The primary goal of value investors, then, is to quantify the company's current value and buy its securities when they can do so cheaply.
+- Growth investing lies somewhere between the dull plodding of value investing and the adrenaline charge of momentum investing. Its goal is to identify companies with bright futures. That means by definition that there's less emphasis on the company's current attributes and more on its potential.
+- The difference between two principal schools of investing can be boiled down to:
+  - Value investors buy stocks (even those whose intrinsic value may show little growth in the future) out of conviction that the current value is high relative to the current price.
+  - Growth investors buy stocks (even those whose current value is low relative to their current price) because they believe the value will grow fast enough in the future to produce substantial appreciation.
+- Compared to value investing, growth investing centers around trying for big winners. If big winners weren't in the offing, why put up with the uncertainty entailed in guess at the future? There's no question about it: it's harder to see the future than the present. Thus, the batting average for growth investors should be lower, but the payoff for doing it well might be higher. The return for correctly predicting which companies will come up with the best new drug, most powerful computer or best-selling movies should be substantial.
+- Value investing can't consistently produce good returns without an accurate estimate of value. Without that, any hope for consistent success as an investor is just that: hope. Without accurate estimates, you'll be as likely to overpay as to underpay. And if you overpay, it takes a surprising improvement in value, a strong market or an even less discriminating buyer (what we used to call a "greater fool") to bail you out.
+- Also, if one has settled on the value approach to investing and come up with an intrinsic value for a security or asset, the next important thing is to hold it firmly. That's because in the world of investing, being correct about something isn't at all synonymous with being proved correct right away.
+- The most value investors can hope for is to be right about an asset's value and buy when it's available for less. But doing so today certainly doesn't mean you're going to start making money tomorrow. A firmly held view on value can help you cope with this disconnect.
+- Chances to buy well below actual value don't come along every day, and you should welcome them. Warren Buffett describes them as "buying dollars for fifty cents".
+- In investing many people tend to fall further in love with the thing they've bought as its price rises, since they feel validated, and they like it less as the price falls, when they begin to doubt their decision to buy.
+- Investors with no knowledge of (or concern for) profits, dividends, valuation or conduct of business simply cannot possess the resolve needed to do the right thing at the right time. With everyone around them buying and making money, they can't know when a stock is too high and therefore resist joining in. And with a market free fall, they can't possibly have the confidence needed to hold or buy at severely reduced prices.
+
+
+
+
+
