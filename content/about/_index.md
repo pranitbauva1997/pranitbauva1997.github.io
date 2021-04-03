@@ -1,7 +1,7 @@
 +++
-title = "About Pranit Bauva"
+title = "About"
 description = ""
-template = "about.html"
+template = "about_or_contact.html"
 +++
 
 I am a Software Engineer, a long-term thinker and a strong believer in the power of compounding. With a growth mindset I keep pondering about **"How fast do I double?"** day in and day out.
