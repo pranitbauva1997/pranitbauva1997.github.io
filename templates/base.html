@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pranit Bauva</title>
+  <link rel="stylesheet" href='{{ get_url(path='style.css') }}'>
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav>
+    <section class="navigation">
+      <div class="navigation-title">
+        <a href="/">BAUVA</a>
+      </div>
+      <div class="navigation-list">
+        <a class="navigation-item" href="#">ABOUT</a>
+        <a class="navigation-item" href="#">BLOG</a>
+        <a class="navigation-item" href="#">RESUME</a>
+      </div>
+    </section>
+  </nav>
+  <section class="content">
+    {% block content %} {% endblock %}
+  </section>
+  <footer>
+    <section class="footer">
+      <i class="fa fa-copyright footer-element"></i>
+      <p class="footer-element">Pranit Bauva</p>
+      <i class="fa fa-angle-double-right footer-element"></i>
+      <a class="footer-element" href="#">Annual Reports</a>
+    </section>
+  </footer>
+  <script src="https://use.fontawesome.com/1ceb47dcca.js"></script>
+</body>
