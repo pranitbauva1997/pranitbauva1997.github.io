@@ -1,6 +1,5 @@
 +++
 title = "About"
-description = ""
 template = "about_or_contact.html"
 +++
 

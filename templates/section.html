@@ -7,6 +7,9 @@
 {% block content %}
 
 <h1>{{ section.title }}</h1>
+{% if section.description %}
+<p>{{ section.description }}</p>
+{% endif %}
 
 <section>
   {% for post in section.pages %}
