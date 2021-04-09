@@ -1,21 +1,21 @@
 {% extends "base.html" %}
 
 {% block title %}
-<title>{{ section.title }}</title>
+<title>{{ section.title | trim }}</title>
 {% endblock title %}
 
 {% block content %}
 
 <h1>{{ section.title }}</h1>
 {% if section.description %}
-<p>{{ section.description }}</p>
+<p>{{ section.description | trim }}</p>
 {% endif %}
 
 <section>
   {% for post in section.pages %}
     <div class="post-title-row">
       <p><a class="post-title" href="{{ post.permalink }}">{{ post.title }}</a></p>
-      <p>{{ post.date }}</p>
+      <p>{{ post.date | trim | date(format="%e %b %Y") }}</p>
     </div>
   {% endfor %}
 </section>
