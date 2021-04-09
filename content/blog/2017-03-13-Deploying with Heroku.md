@@ -5,11 +5,9 @@ date = 2017-03-13
 
 As their **About page** reads:
 
-```
-Heroku is a cloud platform that lets companies build, deliver, monitor
+> Heroku is a cloud platform that lets companies build, deliver, monitor
 and scale apps — we're the fastest way to go from idea to URL, bypassing
 all those infrastructure headaches.
-```
 
 Heroku is the fastest deployment service that is available right now.
 One can directly use git to deploy heroku apps with simplicity and ease.

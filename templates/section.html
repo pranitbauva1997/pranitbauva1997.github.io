@@ -13,7 +13,10 @@
 
 <section>
   {% for post in section.pages %}
-    <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+    <div class="post-title-row">
+      <p><a class="post-title" href="{{ post.permalink }}">{{ post.title }}</a></p>
+      <p>{{ post.date }}</p>
+    </div>
   {% endfor %}
 </section>
 
