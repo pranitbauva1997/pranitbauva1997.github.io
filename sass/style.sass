@@ -12,13 +12,18 @@ body
   font-family: 'Playfair Display', serif
 
 a:link
-  text-decoration: none
+  text-decoration: underline dotted
+  text-underline-offset: 40%
+  color: $onyx
 a:visited
-  text-decoration: none
-  color: inherit
+  text-decoration: none dotted
+  color: $onyx
+  text-underline-offset: 40%
 a:hover
   text-decoration: underline
-  color: $orange
+  text-underline-offset: 40%
+  text-decoration-color: $red
+  color: $onyx
 
 .navigation
   display: flex
@@ -52,6 +57,10 @@ a:hover
 
 .section-content
   width: 50%
+  font-size: 1.1em
+  li
+    a
+      line-height: 1.8em
 
 footer
   width: 100%
