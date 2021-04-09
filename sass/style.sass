@@ -1,15 +1,14 @@
-$pink: #F374AE
-$orange: #F85E00
-$red: #A41623
-$timberwolf: #D3D0CB
 $onyx: #393E41
+$red: #A41623
+$bgcolor1: #b8b8b8
+$bgcolor2: #f8f8f8
 
 body
   width: 100%
-  background-color: $timberwolf
+  background-color: linear-gradient(90deg, $bgcolor1, $bgcolor2)
   color: $onyx
   // font-family: 'Noto Sans JP', sans-serif
-  font-family: 'Playfair Display', serif
+  font-family: "source-sans-pro",sans-serif
 
 a:link
   text-decoration: underline dotted
@@ -54,13 +53,20 @@ a:hover
   margin-top: 2rem
   margin-bottom: 2rem
   min-height: 80vh
+  font-size: 1.1em
 
 .section-content
-  width: 50%
+  width: 60%
   font-size: 1.1em
   li
     a
       line-height: 1.8em
+  blockquote
+    font-family: "volkhov",serif
+    font-style: italic
+    border-left: 8px solid #000
+    padding-left: 20px
+    margin: 0
 
 footer
   width: 100%
