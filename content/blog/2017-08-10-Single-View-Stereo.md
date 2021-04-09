@@ -379,9 +379,9 @@ just do it once so as to get all the values. For our problem, we need to
 calibrate the cameras again and again for every frames that we take in
 and we won't even know the actual 3D coordinate for the same.
 
-{% highlight cpp %}
+```cpp
 cv::Mat cv::findFundamentalMat()
-{% endhighlight %}
+```
 
 which takes in two input arrays each of which correspond to their
 respective points in the left and the right image and gives us
@@ -414,9 +414,9 @@ require one. Now we choose a point and try to triangulate it with respect
 to both the image planes so that we can know whether they lie in front of
 them or at the back. To do this there exists a function named
 
-{% highlight cpp %}
+```cpp
 void cv::triangulatePoints()
-{% endhighlight %}
+```
 
 which reconstructs the point by triangulation. We have mentioned the
 maths behind it above. It takes Projection Matrix $$ P_1 $$ and $$ P_2 $$
@@ -436,9 +436,9 @@ for the corresponding point in the x-coordinate only instead of seaching
 in the whole area. Luckily, we have an opencv function which can do this
 for us, namely
 
-{% highlight cpp %}
+```cpp
 void cv::stereoRectify()
-{% endhighlight %}
+```
 
 which gives us the new $$ R_1 $$, $$ R_2 $$, $$ P_1 $$ and $$ P_2 $$ for
 each of the image. The better part about this function is that this can
@@ -462,13 +462,13 @@ coordinates.
 
 Now we can finally the opencv function,
 
-{% highlight cpp %}
+```cpp
 cv::StereoBM::StereoBM()
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 void cv::StereoBM::operator()
-{% endhighlight %}
+```
 
 which operates only on rectified images to generate the disparity map for
 us.
@@ -479,9 +479,9 @@ Since we now have the disparity map and the **Q** matrix we can easily
 compute the depth map. Luckily there exists an opencv function for the
 same namely,
 
-{% highlight cpp %}
+```cp
 void cv::reprojectImageTo3D()
-{% endhighlight %}
+```
 
 You can find the source code for all of this on
 [github](https://github.com/Swarm-IITKgp/single-view-stereo).
