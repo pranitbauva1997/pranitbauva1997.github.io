@@ -17,3 +17,4 @@ highlight_theme = "material-dark"
 
 [extra]
 # Put all your custom variables here
+mathjax_enable = true

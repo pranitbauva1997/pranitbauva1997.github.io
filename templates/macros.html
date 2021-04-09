@@ -1,0 +1,6 @@
+{% macro mathjax_load(link) %}
+{% if config.extra.mathjax_enable %}
+<script src={{ get_url(path="lib/mathjax.js" ) }}></script>
+<script id="MathJax-script" async src={{link}}></script>
+{% endif %}
+{% endmacro %}

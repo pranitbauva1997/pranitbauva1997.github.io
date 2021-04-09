@@ -1,6 +1,9 @@
 +++
 title = "Single View Stereo"
 date = 2017-08-10
+
+[extra]
+mathjx = true
 +++
 
 Stereo Vision is traditionally done with the help of two cameras which
@@ -15,18 +18,18 @@ in a future post.
 
 Traditionally stereo vision (generating disparity maps) is achieved by
 using two synchronized cameras taking the pictures at the same time and
-in which we know how far the cameras are (the translational matrix **T**) and
+in which we know how far the cameras are (the translational matrix $ T $) and
 how are the cameras orientated with respect to each other (The rotational
-matrix **R**) by doing the camera calibration once at the start. Now the
+matrix $ R $) by doing the camera calibration once at the start. Now the
 problem is that we don't want to use two cameras but we want to achieve
-the exact same thing using only one camera and the **R** and **T** matrix change
+the exact same thing using only one camera and the $ R $ and $ T $ matrix change
 with every set of images and plus for camera calibration we traditionally
 use chess board in which we know the real world distances, while right
 now we don't know that. What we intend to do is to take a frame, then
 move the camera and take another frame. So now we have two images and
 technically we can apply stereo vision. The only problem now is that we
-don't have the **R** and **T** matrix in this case. So we can't compute the
-fundamental matrix **F**. We now need to figure out how to find **F, R and T**.
+don't have the $ R $ and $ T $ matrix in this case. So we can't compute the
+fundamental matrix $ F $. We now need to figure out how to find $ F $, $ R $ and $ T $.
 
 ## Mathematical Theory
 
@@ -57,8 +60,8 @@ So as of now, the problem boils down to finding a, b, c, d, e, f, g, h, i.
 As the equation *(1)* suggests, if we have the coordinate of many points
 in left image and their corresponding points in the right image, we can
 easily figure out the value of the matrix **F**. Let's just start off by
-taking a single point in the left image $$ (x_1, y_1) $$
-and the corresponding point in the right image $$ (x_1', y_1') $$
+taking a single point in the left image $ (x_1, y_1) $
+and the corresponding point in the right image $ (x_1', y_1') $
 
 On plugging these values in equation *(1)*, we get
 
@@ -143,12 +146,12 @@ $$ E = K^T F K $$
 This is equation *(4)*.
 
 It is essential to note here that Essential Matrix also rank 1 ie.
-$$ rank(E) = 2 $$.
+$ rank(E) = 2 $.
 
 ### Calculate Projection
 
-Let $$ P_1 $$ and $$ P_2 $$ be the projection vectors from both the images.
-Now assuming $P_1$ to be our reference point, we can get the $$ P_2 $$ in
+Let $ P_1 $ and $ P_2 $ be the projection vectors from both the images.
+Now assuming $ P_1 $ to be our reference point, we can get the $ P_2 $ in
 terms of the Rotational Matrix **R** and **T**.
 
 $$
@@ -240,7 +243,7 @@ U =
 \end{array} \right)
 $$
 
-and thus we can say that $$ T = -u_3 $$ or $$ T = u_3 $$ which are two
+and thus we can say that $ T = -u_3 $ or $ T = u_3 $ which are two
 values.
 
 ### Reconstructing R
@@ -389,10 +392,10 @@ Fundamental Matrix **F**. This method uses RANSAC to compute the fundamental
 matrix and gives it to us after cleaning it up so this is finally of
 rank 2 as we require.
 
-### Decomposing F into E, T, $$ P_1 $$ and $$ P_2 $$
+### Decomposing $ F $ into $ E $, $ T $, $ P_1 $ and $ P_2 $
 
 This is the most challenging part of this problem. We now have **F** but we
-don't have **E**, **R**, **T**, $$ P_1 $$ and $$ P_2$ $$. Unfortunately there is
+don't have **E**, **R**, **T**, $ P_1 $ and $ P_2 $. Unfortunately there is
 no inbuilt method in opencv to actually implement this for us so we will
 have to type this out all by ourselves. Since we know the mathematics
 behind it, we can easily use the OpenCV library for linear algebra and
@@ -419,7 +422,7 @@ void cv::triangulatePoints()
 ```
 
 which reconstructs the point by triangulation. We have mentioned the
-maths behind it above. It takes Projection Matrix $$ P_1 $$ and $$ P_2 $$
+maths behind it above. It takes Projection Matrix $ P_1 $ and $ P_2 $
 and arrays of points corresponding to each image in two separate arrays
 and outputs the 3D coordinates in a 4D array in which the last one is the
 homogeneous coordinate. Now we can easily see which points are in the
@@ -440,7 +443,7 @@ for us, namely
 void cv::stereoRectify()
 ```
 
-which gives us the new $$ R_1 $$, $$ R_2 $$, $$ P_1 $$ and $$ P_2 $$ for
+which gives us the new $ R_1 $, $ R_2 $, $ P_1 $ and $ P_2 $ for
 each of the image. The better part about this function is that this can
 even get the value of **Q** which gives us the relation between the disparity
 map and the depth map which we will need further to show the image in 3D.
@@ -451,16 +454,16 @@ Now we have got the rectification parameters. After this we will have to
 make the corresponding changes in the image according to those parameters.
 Luckily, we have an opencv function namely
 
-{% highlight cpp %}
+```cpp
 void cv::undistortPoints()
-{% endhighlight %}
+```
 
 which maps the initial point coordinates to their final destination
 coordinates.
 
 ### Generating disparity map with Blob Matching
 
-Now we can finally the opencv function,
+Now we can finally the use opencv function,
 
 ```cpp
 cv::StereoBM::StereoBM()
