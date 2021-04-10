@@ -15,7 +15,7 @@
     {% for post in section.pages %}
       <div class="post-title-row">
         <p><a class="post-title" href="{{ post.permalink }}">{{ post.title }}</a></p>
-        <p>{{ post.date | trim | date(format="%e %b %Y") }}</p>
+        <p class="post-date">{{ post.date | trim | date(format="%e %b %Y") }}</p>
       </div>
     {% endfor %}
   </div>

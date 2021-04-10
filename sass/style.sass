@@ -44,15 +44,11 @@ a:hover
 
 .navigation
   display: flex
-  align-items: stretch
+  justify-content: space-between
   width: 70%
   margin: 0 auto
   font-weight: bold
   font-size: 20
-
-.navigation-title
-  width: 20%
-  order: -1
 
 .navigation-list
   display: flex
@@ -84,12 +80,12 @@ a:hover
   text-overflow: clip
 
 .section-content
-  max-width: 50%
+  max-width: 60%
   font-size: 1.1em
 
   // Change the article view width depending on screen width of the user agent
   @media (max-width: $big-tab-width) and (min-width: $tab-width)
-    max-width: 60%
+    max-width: 65%
   @media (max-width: $tab-width) and (min-width: $small-tab-width)
     max-width: 70%
   @media (max-width: $small-tab-width) and (min-width: $big-phone-width)
@@ -120,6 +116,14 @@ a:hover
     border-left: 8px solid #000
     padding-left: 20px
     margin: 0
+
+.post-date
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  font-size: 0.7em
+  @media (max-width: $big-tab-width)
+    display: none
 
 footer
   width: 100%
