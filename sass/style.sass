@@ -1,26 +1,29 @@
-$onyx: #393E41
+$onyx1: #393E41
+// $onyx2: #24282b
 $red: #A41623
-$bgcolor2: #f8f8f8
+$bgcolor1: #f8f8f8
+// $bgcolor2: #b8b8b8
+// For dark code use text color as bgcolor1 and backend color as onyx2
 
 body
   width: 100%
-  background-color: $bgcolor2
-  color: $onyx
+  background-color: $bgcolor1
+  color: $onyx1
   font-family: "source-sans-pro",sans-serif
 
 a:link
   text-decoration: underline dotted
   text-underline-offset: 30%
-  color: $onyx
+  color: $onyx1
 a:visited
   text-decoration: none dotted
-  color: $onyx
   text-underline-offset: 30%
+  color: $onyx1
 a:hover
   text-decoration: underline
   text-underline-offset: 30%
   text-decoration-color: $red
-  color: $onyx
+  color: $onyx1
 
 .sticky
   position: fixed
@@ -31,7 +34,8 @@ a:hover
   border-top: 0
   padding-bottom: 15px
   padding-top: 10px
-  background-color: $bgcolor2
+  background-color: $bgcolor1
+  color: $onyx1
 
 .navigation
   display: flex
