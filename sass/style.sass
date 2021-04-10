@@ -1,11 +1,10 @@
 $onyx: #393E41
 $red: #A41623
-$bgcolor1: #b8b8b8
 $bgcolor2: #f8f8f8
 
 body
   width: 100%
-  background-color: linear-gradient(90deg, $bgcolor1, $bgcolor2)
+  background-color: $bgcolor2
   color: $onyx
   font-family: "source-sans-pro",sans-serif
 
@@ -22,6 +21,17 @@ a:hover
   text-underline-offset: 30%
   text-decoration-color: $red
   color: $onyx
+
+.sticky
+  position: fixed
+  width: 100%
+  left: 0
+  top: 0
+  z-index: 100
+  border-top: 0
+  padding-bottom: 15px
+  padding-top: 10px
+  background-color: $bgcolor2
 
 .navigation
   display: flex
