@@ -2,12 +2,13 @@ $onyx1: #393E41
 // $onyx2: #24282b
 $red: #A41623
 $bgcolor1: #f8f8f8
+$navbarcolor: #c8c8c8
 // $bgcolor2: #b8b8b8
 // For dark code use text color as bgcolor1 and backend color as onyx2
 
 $big-tab-width: 900px
 $tab-width: 800px
-$small-tab-width: 700px
+$small-tab-width: 750px
 $big-phone-width: 600px
 $phone-width: 500px
 $small-phone-width: 400px
@@ -39,25 +40,40 @@ a:hover
   border-top: 0
   padding-bottom: 15px
   padding-top: 10px
-  background-color: $bgcolor1
+  background-color: $navbarcolor
   color: $onyx1
 
 .navigation
   display: flex
-  justify-content: space-between
+  flex-direction: row
+  justify-content: center
   width: 70%
   margin: 0 auto
   font-weight: bold
   font-size: 20
 
-.navigation-list
-  display: flex
-  justify-content: flex-end
-  width: 80%
+  .navigation-item
+    display: block
+    margin-left: 10px
+    margin-right: 10px
+    .icon
+      margin-right: 5px
+      margin-left: 5px
+    .nav-menu
+      margin-right: 5px
+      margin-left: 5px
 
-.navigation-item
-  margin-left: 10px
-  margin-right: 10px
+  .navigation-item:first-child
+    display: none
+
+  @media (max-width: $small-tab-width)
+    justify-content: center
+    .navigation-item:first-child
+      display: block
+    .navigation-item:not(:first-child)
+      display: none
+
+
 
 .content
   display: flex
@@ -96,7 +112,7 @@ a:hover
     max-width: 90%
   @media (max-width: $small-phone-width)
     max-width: 95%
-  
+
   code
     padding-left: 5px
     padding-right: 5px
@@ -142,9 +158,22 @@ footer
     margin: 10px
 
 .footer-content
-  width: 50%
+  max-width: 50%
   text-align: center
   margin: 0 auto
+    // Change the article view width depending on screen width of the user agent
+  @media (max-width: $big-tab-width) and (min-width: $tab-width)
+    max-width: 55%
+  @media (max-width: $tab-width) and (min-width: $small-tab-width)
+    max-width: 60%
+  @media (max-width: $small-tab-width) and (min-width: $big-phone-width)
+    max-width: 67%
+  @media (max-width: $big-phone-width) and (min-width: $phone-width)
+    max-width: 74%
+  @media (max-width: $phone-width) and (min-width: $small-phone-width)
+    max-width: 80%
+  @media (max-width: $small-phone-width)
+    max-width: 85%
 
 .footer-element
   display: inline

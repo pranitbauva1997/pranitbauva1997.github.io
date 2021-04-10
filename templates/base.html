@@ -12,17 +12,43 @@
 </head>
 
 <body>
+  <script>
+    function toggleNavButton() {
+      let navBars = document.getElementsByClassName("navigation");
+      if (navBars[0].className === "navigation") {
+        navBars[0].className += " responsive";
+        navBars[0].style.flexDirection = "column";
+      } else {
+        navBars[0].className = "navigation";
+        navBars[0].style.flexDirection = "row";
+      }
+
+      let navItems = document.getElementsByClassName("navigation-item");
+      for (let i = 0; i < navItems.length - 1; i++) {
+        if (navItems[i].style.display === "block") {
+          if (i == 0) {
+            continue
+          }
+          navItems[i].style.display = "none";
+        } else {
+          navItems[i].style.display = "block";
+          navItems[i].style.lineHeight = "2em";
+          navItems[i].style.textAlign = "center";
+        }
+      }
+    }
+  </script>
   <nav class="sticky">
     <section class="navigation">
-      <div class="navigation-item">
-        <a href="/">BAUVA</a>
-      </div>
-      <div class="navigation-list">
-        <a class="navigation-item" href="/about/">ABOUT</a>
-        <a class="navigation-item" href="/blog/">BLOG</a>
-        <a class="navigation-item" href="/book_summaries/">BOOK SUMMARIES</a>
-        <a class="navigation-item" href="#">RESUME</a>
-        <a class="navigation-item" href="/contact/">CONTACT</a>
+      <a href="javascript:void(0);" class="navigation-item" onclick="toggleNavButton()">
+        <i class="fa fa-bars icon"></i><span class="nav-menu">Menu</span>
+      </a>
+      <a class="navigation-item" href="/">HOME</a>
+      <a class="navigation-item" href="/about/">ABOUT</a>
+      <a class="navigation-item" href="/blog/">BLOG</a>
+      <a class="navigation-item" href="/book_summaries/">BOOK SUMMARIES</a>
+      <a class="navigation-item" href="#">RESUME</a>
+      <a class="navigation-item" href="/contact/">CONTACT</a>
     </section>
   </nav>
   <section class="content">
