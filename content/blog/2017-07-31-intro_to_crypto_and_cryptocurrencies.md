@@ -147,7 +147,7 @@ than trying random values of x.
 Theorem: If c is collision free then the hash function is also collision
 free.
 
-![Week 1_1](/images/blog/cryptocurrency/1.png){:.img-reponsive}
+{{ image(src="/images/blog/cryptocurrency/1.png") }}
 
 ## Hash Pointers and Data Structures
 
@@ -159,7 +159,7 @@ If we have a hash, we can:
  * ask to get the info back
  * verify that it hasn't changed
 
-![Week 1_2](/images/blog/cryptocurrency/2.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/2.png") }}
 
 We can take any data structure and build it with the help of a hash
 pointer.
@@ -167,7 +167,7 @@ pointer.
 Let's take an example of building a linked list. We can build a linked
 list with the help of a hash pointer like this:
 
-![Week 1_3](/images/blog/cryptocurrency/3.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/3.png") }}
 
 In this kind of a data structure one can add things at the end of the list
 but if somebody wants to modify a previously stored list, then it is not
@@ -181,7 +181,7 @@ at the end head of the list would need to be changed which is not possible.
 We can also bring a binary tree with the help of a hash pointer. This is
 commonly known as "Merkele Tree".
 
-![Week 1_4](/images/blog/cryptocurrency/4.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/4.png") }}
 
 It is very easy to even verify the data that we have and the time
 complexity of the algorithm will be
@@ -289,33 +289,33 @@ creates a data structure pointing to Alice's public key
 and Goofy signs it. Now Alice is able to present the whole data structure
 and prove that Goofy gave it to her. Now Alice can pass it again to Bob.
 
-![Week 1_5](/images/blog/cryptocurrency/5.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/5.png") }}
 
 Goofy coin is insecure in the way that it doesn't take care of the
 double spending problem. Now in this Goofy can give the coin to many people
 and the other person won't ever know whether that coin has been given to
 someone else or not. This is the main design challenge in digital currency.
 
-![Week 1_6](/images/blog/cryptocurrency/6.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/6.png") }}
 
 #### Scrooge Coin
 
 Scrooge publishes a history of all transactions (a block chain, signed by
 Scrooge).
 
-![Week 1_7](/images/blog/cryptocurrency/7.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/7.png") }}
 
 $$ CreateCoins $$ transaction creates new coins. This is valid because
 Scrooge said so. In the transaction type, there is a table of coins created
 which have the id, value and a recipient address. If Scrooge puts it into
 history then it is valid and we don't need to worry.
 
-![Week 1_8](/images/blog/cryptocurrency/8.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/8.png") }}
 
 $$ PayCoins $$ transaction consumes (and destroys) some coins, and creates
 new coins of the same total value. This is valid if:
 
-![Week 1_9](/images/blog/cryptocurrency/9.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/9.png") }}
 
  * consumed coins valid
  * not already consumed
@@ -400,7 +400,7 @@ bitcoin and further it contains a hash. This hash is a way for Alice
 to link together this transaction or this coin to her receipt of this
 coin from someone else.
 
-![Week 2_1](/images/blog/cryptocurrency/10.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/10.png") }}
 
 Note: In this, Bob is not in this picture. If Bob wants to be notified
 that this transaction has in fact happened then he might want to run a
@@ -422,7 +422,7 @@ At any given time:
    reached consensus on
  * Each node has a set of outstanding transactions it's heard about
 
-![Week 2_2](/images/blog/cryptocurrency/11.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/11.png)") }}
 
 Although this has things similar to bitcoins, this is not how bitcoins
 exactly work. This is because, doing things in this way is a really
@@ -519,9 +519,9 @@ from her address to Bob's public address. She broadcasts it to the
 network and let's say some honest node creates this block, listens to
 the transaction and includes it in that block.
 
-![Week 2_3](/images/blog/cryptocurrency/12.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/12.png") }}
 
-![Week 2_4](/images/blog/cryptocurrency/13.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/13.png") }}
 
 Summarizing:
  * Protection against invalid transactions is cryptographic, but enforced
@@ -536,7 +536,7 @@ Summarizing:
 
 Can we give nodes *incentives* for behaving honestly?
 
-![Week 2_5](/images/blog/cryptocurrency/14.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/14.png") }}
 
 #### Incentive 1: block reward
 
@@ -551,7 +551,7 @@ long-term consensus branch!
 
 **There's a finite supply of Bitcoins**
 
-![Week 2_6](/images/blog/cryptocurrency/15.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/15.png") }}
 
 #### Incentive 2: transaction fees
 
@@ -586,7 +586,7 @@ a resource that no one can monopolize (we hope)
 
 **Hash Puzzles**
 
-![Week 2_7](/images/blog/cryptocurrency/16.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/16.png") }}
 
 ##### PoW property 1: difficult to compute
 
@@ -612,7 +612,7 @@ the protocol.
 
 **Solving hash puzzles is probabilistic**:
 
-![Week 2_8](/images/blog/cryptocurrency/17.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/17.png") }}
 
 ##### PoW property 3: trivial to verify
 
@@ -644,7 +644,7 @@ $$ Profit = reward - hardware - electricity $$
 There is a circle of dependency between `security of block chain`,
 `health of mining ecosystem`, and `value of currency`.
 
-![Week 2_9](/images/blog/cryptocurrency/18.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/18.png") }}
 
 It is a very tricky process as to how all of these three things were
 acquired by the Bitcoin system in an interdependent manner. It was of
@@ -671,7 +671,7 @@ Destroy confidence in Bitcoin? YES
 If we use an account based ledger wherein we store all the trades that can
 happen then we have something like this:
 
-![Week 3_1](/images/blog/cryptocurrency/19.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/19.png") }}
 
 Although the problem with this is that to verify that when the person
 who promises to pay is a big pain because for that we would have to
@@ -686,7 +686,7 @@ from the original block chain.
 
 Bitcoin uses something like this.
 
-![Week 3_2](/images/blog/cryptocurrency/20.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/20.png") }}
 
 The first transaction depicts the creation of a new currency. In the second
 transaction, the coins are split into two, Bob is given 17 coins
@@ -699,7 +699,7 @@ owned by each person.
 
 ##### A real deal: A Bitcoin Transaction
 
-![Week 3_3](/images/blog/cryptocurrency/21.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/21.png") }}
 
 Three parts:
  * Metadata
@@ -939,7 +939,7 @@ with Bob. When Alice stop using the service, Bob will take the last
 transaction (which has the highest coins). So technically all of those
 transactions are double-spend.
 
-![22](/images/blog/cryptocurrency/22.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/22.png") }}
 
 What is Bob never signs the last transaction?
 
@@ -950,7 +950,7 @@ signed by Alice and Bob. The metadata parameter `lock_time` is used to
 specify this, and if contains a non-zero value then the transaction
 can't be published until some time specified by that value in future.
 
-![23](/images/blog/cryptocurrency/23.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/23.png") }}
 
 ##### More Advanced Scripts
 
@@ -967,13 +967,13 @@ Why bundle transactions together?
  - Limit length of hash-chain of blocks
    - Faster to verify history
 
-![24](/images/blog/cryptocurrency/24.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/24.png") }}
 
 ##### The real deal
 
-![25](/images/blog/cryptocurrency/25.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/25.png") }}
 
-![26](/images/blog/cryptocurrency/26.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/26.png") }}
 
 #### The Bitcoin Network
 
@@ -994,9 +994,9 @@ special message `getaddr()` asking to know which all nodes in that node
 connected to and then you can perform his task iteratively and finally
 choose the nodes you want to pair up with.
 
-![27](/images/blog/cryptocurrency/27.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/27.png") }}
 
-![28](/images/blog/cryptocurrency/28.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/28.png") }}
 
 ##### Transaction Propogation (flooding)
 
@@ -1037,7 +1037,7 @@ Relay a new block when you hear it if:
 
 ##### Block Propagation Times
 
-![29](/images/blog/cryptocurrency/29.png){:.img-responsive}
+{{ image(src="/images/blog/cryptocurrency/29.png") }}
 
 ##### How big is the network?
 
@@ -1086,7 +1086,7 @@ Idea: don't store everything
 ##### Thoroughput limits in Bitcoin
 
  - 1 bytes/block (10 min)
- - >250 bytes/transaction
+ - more than 250 bytes/transaction
  - 7 transactions/sec
 
 Compare to:

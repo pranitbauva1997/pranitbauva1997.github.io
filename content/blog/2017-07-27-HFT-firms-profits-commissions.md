@@ -64,7 +64,6 @@ Now the stack with many trades might look like:
 | Offer    | 2000       | 120     |
 | Bid      | 200        | 110     |
 | Bid      | 500        | 112     |
-{: .table}
 
 Now the exchanges' job is to match up the trades. So the bid offer of 500
 shares at Rs. 112 will be matched up, then 200 shares at 110 and then 1000
@@ -106,7 +105,7 @@ at Rs. 10, so you buy them but you still have 800 apples to buy more,
 so you take your car and then go to market B where there are 900 apples
 available at Rs. 10.50, so you finish your order by buying 800 more apples.
 
-![simple market](/images/blog/hft-profits-commissions/1.jpg){:.img-responsive}
+{{ image(src="/images/blog/hft-profits-commissions/1.jpg") }}
 
 ### Trading after HFT
 
@@ -116,7 +115,7 @@ about this and before you get into car and go to the next market, that rat
 goes to the market B buys all the apples at Rs. 10.50 and before you arrive
 there it offers to sell at Rs. 11 .
 
-![simple market with HFT](/images/blog/hft-profits-commissions/2.jpg){:.img-responsive}
+{{ image(src="/images/blog/hft-profits-commissions/2.jpg") }}
 
 ### Putting it all together
 
