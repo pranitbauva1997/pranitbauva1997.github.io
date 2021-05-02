@@ -96,18 +96,18 @@ a:hover
   text-overflow: clip
 
 .section-content
-  max-width: 60%
+  max-width: 45%
   font-size: 1.1em
 
   // Change the article view width depending on screen width of the user agent
   @media (max-width: $big-tab-width) and (min-width: $tab-width)
-    max-width: 65%
+    max-width: 55%
   @media (max-width: $tab-width) and (min-width: $small-tab-width)
-    max-width: 70%
+    max-width: 60%
   @media (max-width: $small-tab-width) and (min-width: $big-phone-width)
-    max-width: 77%
+    max-width: 67%
   @media (max-width: $big-phone-width) and (min-width: $phone-width)
-    max-width: 84%
+    max-width: 74%
   @media (max-width: $phone-width) and (min-width: $small-phone-width)
     max-width: 90%
   @media (max-width: $small-phone-width)
@@ -135,17 +135,17 @@ a:hover
 
   table
     width: 100%
-    text-align: center
-    border: 2px solid black
-    border-spacing: 0px
-    border-radius: 10px
+    text-align: left
+    border-collapse: collapse
+    margin: 10px
     
     th
-      border: 1px solid black
+      padding: 5px
 
     td
-      border: 1px solid black
-
+      border-top: 1px solid black
+      border-bottom: 1px solid black
+      padding: 5px
 
 .image
   width: 100%

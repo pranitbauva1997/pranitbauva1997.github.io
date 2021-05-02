@@ -1,6 +1,9 @@
 +++
 title = "Introduction to Crypto and Cryptocurrencies"
 date = 2017-07-31
+
+[extra]
+mathjx = true
 +++
 
 ## Week 1: Introduction
@@ -19,8 +22,8 @@ Properties required:
 #### Hash Property 1: Collision Free
 
 Nobody can find x and y such that
-$$ x!= y $$ and
-$$ H(x) = H(y) $$. When we say
+$ x!= y $ and
+$ H(x) = H(y) $. When we say
 collision free, we don't mean there exists 0 collisions but instead we
 want it such that nobody can find it.
 
@@ -35,7 +38,7 @@ them.
 
 **How to find a collision?**
 
-Try $$ {2^{130}} $$ random chosen inputs and 99.8% chance that two of them will
+Try $ {2^{130}} $ random chosen inputs and 99.8% chance that two of them will
 collide. So no matter what the hash function is, it any which takes too
 longer. Just to give a sense of the numbers, if all current computers in
 the universe were computing this with combined power right from the start
@@ -52,8 +55,8 @@ No hash function has been proved collision-free.
 
 **Application: Hash as a message digest**
 
-If we know $$ H(x) = H(y) $$,
-it's safe to assume that $$ x = y $$.
+If we know $ H(x) = H(y) $,
+it's safe to assume that $ x = y $.
 
 That means, to recognize a file that we saw before, just remember the its
 hash.
@@ -63,7 +66,7 @@ This is useful because the hash is small and can be compared more easily.
 #### Hash Property 2: Hiding
 
 We want something like this:
-Given $$ H(x) $$, it is infeasible to find  $$ x $$.
+Given $ H(x) $, it is infeasible to find  $ x $.
 
 This property fails when the inputs can be really less, for eg. a coin
 toss.
@@ -72,7 +75,7 @@ toss.
 
 If r is chosen from a probability distribution that has __high min-entropy__,
 then given
-$$ H(r | x) $$
+$ H(r | x) $
 , it is infeasible to find x.
 
 High min-entropy means that the distribution is "very spread out", so that
@@ -90,21 +93,21 @@ $$ (com, key) := commit(msg) $$
 
 $$ match := verify(com, key, msg) $$
 
-To seal $$ msg $$ in envelope:
+To seal $ msg $ in envelope:
 
 $$ (com, key) := commit(msg) --> publish -> com $$
 
 **To open envelope**:
 
-publish $$ key $$, $$ msg $$
+Publish $ key $, $ msg $
 
-anyone can use $$ verify() $$ to check validity
+anyone can use $ verify() $ to check validity
 
 **Security Properties**:
 
-*Hiding*: Given $$ com $$, infeasible to find $$ msg $$.
+*Hiding*: Given $ com $, infeasible to find $ msg $.
 
-*Binding*: Infeasible to find $$ msg != msg' $$ such that
+*Binding*: Infeasible to find $ msg != msg' $ such that
 
 $$ verify(commit(msg), msg') == true $$
 
@@ -117,19 +120,19 @@ $$ verify(com, key, msg) := (H(key | msg) == com) $$
 **Security Properties**:
 
 *Hiding*: Given
-$$ H(key | msg) $$
+$ H(key | msg) $
 , infeasible to find
-$$ msg $$.
+$ msg $.
 
-*Binding*: Infeasible to find $$ msg != msg' $$ such that
+*Binding*: Infeasible to find $ msg != msg' $ such that
 
-$$ H(key | msg) == H(key | msg') $$
+$ H(key | msg) == H(key | msg') $
 
 #### Hash Property 3: Puzzle-friendly:
 
 For every possible output value y,
 if k is chosen from a distribution with __high min-entropy__, then it is
-infeasible to find x such that $$ H(k | x) = y $$.
+infeasible to find x such that $ H(k | x) = y $.
 
 **Application: Search Puzzle**
 
@@ -137,7 +140,7 @@ Given a "puzzle ID" id (from high min-entropy distribution), and a target
 set Y:
 
 Try to find a "solution" x such that
-$$ H(id | x) \in Y $$
+$ H(id | x) \in Y $
 
 Puzzle-friendly property implies that no solving strategy is much better
 than trying random values of x.
@@ -185,17 +188,17 @@ commonly known as "Merkele Tree".
 
 It is very easy to even verify the data that we have and the time
 complexity of the algorithm will be
-$$ \Theta(\log n) $$
+$ \Theta(\log n) $
 
 #### Advantages of Merkle Tree
 
  * Tree holds many items but just need to remember the root hash
  * Can verify membership in
- $$ \Theta(\log n) $$ time/space
+ $ \Theta(\log n) $ time/space
 
 **Variant**: sorted Merkle Tree
  * Can verify non-membership in
- $$ \Theta(\log n) $$ time/space
+ $ \Theta(\log n) $ time/space
 
 **More generally**, we can use hash pointers in any pointer-based data
 structure that has no cycles.
@@ -216,9 +219,9 @@ $$ isValid := verify(pk, message, sig) $$
 
 where,
 
-$$ sk $$: secret signing key
+$ sk $: secret signing key
 
-$$ pk $$: public verification key
+$ pk $: public verification key
 
 #### Requirements
 
@@ -252,14 +255,14 @@ messages on behalf of that person.
 
 #### How to make a new identity
 
-Create a new, random key-pair (sk, pk) where $$ pk $$
+Create a new, random key-pair (sk, pk) where $ pk $
 is the public "name" you can use (usually better to use
-$$ Hash(pk) $$).
-$$ sk $$ lets you "speak for" the identity
+$ Hash(pk) $).
+$ sk $ lets you "speak for" the identity
 
 You can control the identity, because only you know
-$$ sk $$ if
-$$ pk $$ "looks random", nobody needs to know who you are
+$ sk $ if
+$ pk $ "looks random", nobody needs to know who you are
 
 This brings us to the idea of decentralized identity management
 
@@ -305,14 +308,14 @@ Scrooge).
 
 {{ image(src="/images/blog/cryptocurrency/7.png") }}
 
-$$ CreateCoins $$ transaction creates new coins. This is valid because
+$ CreateCoins $ transaction creates new coins. This is valid because
 Scrooge said so. In the transaction type, there is a table of coins created
 which have the id, value and a recipient address. If Scrooge puts it into
 history then it is valid and we don't need to worry.
 
 {{ image(src="/images/blog/cryptocurrency/8.png") }}
 
-$$ PayCoins $$ transaction consumes (and destroys) some coins, and creates
+$ PayCoins $ transaction consumes (and destroys) some coins, and creates
 new coins of the same total value. This is valid if:
 
 {{ image(src="/images/blog/cryptocurrency/9.png") }}
@@ -422,7 +425,7 @@ At any given time:
    reached consensus on
  * Each node has a set of outstanding transactions it's heard about
 
-{{ image(src="/images/blog/cryptocurrency/11.png)") }}
+{{ image(src="/images/blog/cryptocurrency/11.png") }}
 
 Although this has things similar to bitcoins, this is not how bitcoins
 exactly work. This is because, doing things in this way is a really
@@ -591,7 +594,7 @@ a resource that no one can monopolize (we hope)
 ##### PoW property 1: difficult to compute
 
 It takes around
-$$ 10^{ 20 } $$ hashes/block
+$ 10^{ 20 } $ hashes/block
 
 ##### PoW property 2: parameterizable cost
 
@@ -775,7 +778,7 @@ So the execution will start with pushing `<sig>` into the stack and then
 |------------|
 | `<pubKey>` |
 | `<sig>`    |
-{: .table}
+
 
 After that, the operation is `OP_DUP` which is to duplicate the top of
 the stack. So after this operation the stack looks like,
@@ -786,7 +789,6 @@ the stack. So after this operation the stack looks like,
 | `<pubKey>`   |
 | `<pubKey>`   |
 | `<sig>`      |
-{: .table}
 
 Then the operation is `OP_HASH160` which means to hash the top value of
 the stack. The stack therefore is,
@@ -797,7 +799,6 @@ the stack. The stack therefore is,
 | `<pubKeyHash>` |
 | `<pubKey>`     |
 | `<sig>`        |
-{: .table}
 
 Then the data value `<pubKeyHash?>`,
 
@@ -808,7 +809,6 @@ Then the data value `<pubKeyHash?>`,
 | `<pubKeyHash>`  |
 | `<pubKey>`      |
 | `<sig>`         |
-{: .table}
 
 Then the operation `OP_EQUALVERIFY` which pops the two topmost elements
 and then verifies whether the both are equal, if equal then it removes
@@ -820,7 +820,6 @@ of the script with a negative response for verification.
 | --------------  |
 | `<pubKey>`      |
 | `<sig>`         |
-{: .table}
 
 Now `OP_CHECKSIG` checks whether the signature is valid. It can verify
 signatures without calling special libraries. The input to the signature
