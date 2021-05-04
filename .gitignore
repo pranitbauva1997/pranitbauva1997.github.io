@@ -3,3 +3,6 @@ _site/*
 _local_config.yml
 vendor/*
 .bundle/*
+public/*
+
+.DS_Store

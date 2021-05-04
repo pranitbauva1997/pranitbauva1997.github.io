@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>{{ section.title | trim }}</title>
+{% endblock title %}
+
+{% block content %}
+
+  <h1>{{ section.title }}</h1>
+  <div class="section-content">
+    {% if section.description %}
+    <p>{{ section.description | trim }}</p>
+    {% endif %}
+
+    {% for post in section.pages %}
+      <div class="post-title-row">
+        <p><a class="post-title" href="{{ post.permalink }}">{{ post.title }}</a></p>
+        <p class="post-date">{{ post.date | trim | date(format="%e %b %Y") }}</p>
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock content %}

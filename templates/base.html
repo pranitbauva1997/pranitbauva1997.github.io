@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title %}
+  <title>{{ config.title | trim }}</title>
+  {% endblock %}
+  <link rel="stylesheet" href='{{ get_url(path='style.css') }}'>
+  <link rel="stylesheet" href="https://use.edgefonts.net/c/26d4b4/1w;source-code-pro,2,glz:W:n4,gm5:W:n7;source-sans-pro,2,2cm9PD:W:i2,2cm9PG:W:i3,2cm9PJ:W:i4,2cm9PL:W:i6,2cm9PN:W:i7,2cm9PQ:W:i9,2cm9PC:W:n2,2cm9PF:W:n3,2cm9PH:W:n4,2cm9PK:W:n6,2cm9PM:W:n7,2cm9PP:W:n9;volkhov,2,Wj9:W:i4,WjC:W:i7,WjD:W:n4,WjB:W:n7/l" media="all">
+</head>
+
+<body>
+  <script>
+    function toggleNavButton() {
+      let navBars = document.getElementsByClassName("navigation");
+      if (navBars[0].className === "navigation") {
+        navBars[0].className += " responsive";
+        navBars[0].style.flexDirection = "column";
+      } else {
+        navBars[0].className = "navigation";
+        navBars[0].style.flexDirection = "row";
+      }
+
+      let navItems = document.getElementsByClassName("navigation-item");
+      for (let i = 0; i < navItems.length - 1; i++) {
+        if (navItems[i].style.display === "block") {
+          if (i == 0) {
+            continue
+          }
+          navItems[i].style.display = "none";
+        } else {
+          navItems[i].style.display = "block";
+          navItems[i].style.lineHeight = "2em";
+          navItems[i].style.textAlign = "center";
+        }
+      }
+    }
+  </script>
+  <nav class="sticky">
+    <section class="navigation">
+      <a href="javascript:void(0);" class="navigation-item" onclick="toggleNavButton()">
+        <i class="fa fa-bars icon"></i><span class="nav-menu">Menu</span>
+      </a>
+      <a class="navigation-item" href="/">HOME</a>
+      <a class="navigation-item" href="/about/">ABOUT</a>
+      <a class="navigation-item" href="/blog/">BLOG</a>
+      <a class="navigation-item" href="/book_summaries/">BOOK SUMMARIES</a>
+      <a class="navigation-item" href="#">RESUME</a>
+      <a class="navigation-item" href="/contact/">CONTACT</a>
+    </section>
+  </nav>
+  <section class="content">
+    {% block content %} {% endblock content %}
+  </section>
+  <footer>
+    <section class="footer-content">
+      <i class="fa fa-copyright footer-element"></i>
+      <p class="footer-element">Pranit Bauva</p>
+      <i class="fa fa-angle-double-right footer-element"></i>
+      <a class="footer-element" href="/annual_reports/">Annual Reports</a>
+    </section>
+  </footer>
+  <script src="https://use.fontawesome.com/1ceb47dcca.js"></script>
+  {% if config.extras.googleanalytics %}
+  <!-- Asynchronous Google Analytics snippet -->
+  <script>
+    var _gaq = _gaq || [];
+    var pluginUrl =
+      'https://www.google-analytics.com/plugins/ga/inpage_linkid.js';
+    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+    _gaq.push(['_setAccount', '{{ site.owner.google.analytics }}']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = 'https://stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+{% endif %}
+</body>
