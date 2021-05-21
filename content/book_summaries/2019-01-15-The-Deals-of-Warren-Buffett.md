@@ -1,6 +1,9 @@
 +++
 title = "The Deals of Warren Buffett By Glen Arnold"
 date = 2019-01-15
+
+[taxonomies]
+tags = ["business"]
 +++
 
 # The Warren Buffett Story

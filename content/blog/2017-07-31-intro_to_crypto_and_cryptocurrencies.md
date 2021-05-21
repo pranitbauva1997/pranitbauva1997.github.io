@@ -4,6 +4,9 @@ date = 2017-07-31
 
 [extra]
 mathjx = true
+
+[taxonomies]
+tags = ["tech", "crypto"]
 +++
 
 ## Week 1: Introduction

@@ -1,12 +1,15 @@
 +++
 title = "One Up on Wall Street by Peter Lynch"
 date = 2018-08-19
+
+[taxonomies]
+tags = ["finance", "business"]
 +++
 
 A great book which I read in Summers '18 and have started applying his
 principles in investing in businesses by owning stocks of public companies.
 
-## Introduction: The advantages od dumb money
+## Introduction: The advantages of dumb money
 
  - Analysts miss ten baggers but normal people can see the companies
    selling goods around them.
