@@ -9,35 +9,15 @@
   {% endblock %}
   <link rel="stylesheet" href='/style.css'>
   <link rel="stylesheet" href="https://use.edgefonts.net/c/26d4b4/1w;source-code-pro,2,glz:W:n4,gm5:W:n7;source-sans-pro,2,2cm9PD:W:i2,2cm9PG:W:i3,2cm9PJ:W:i4,2cm9PL:W:i6,2cm9PN:W:i7,2cm9PQ:W:i9,2cm9PC:W:n2,2cm9PF:W:n3,2cm9PH:W:n4,2cm9PK:W:n6,2cm9PM:W:n7,2cm9PP:W:n9;volkhov,2,Wj9:W:i4,WjC:W:i7,WjD:W:n4,WjB:W:n7/l" media="all">
+  {% if config.extra.googleanalytics %}
+  <!-- Asynchronous Google Analytics snippet -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39684817-1"></script>
+  <script src="/lib/google_analytics.js"></script>
 </head>
 
 <body>
-  <script>
-    function toggleNavButton() {
-      let navBars = document.getElementsByClassName("navigation");
-      if (navBars[0].className === "navigation") {
-        navBars[0].className += " responsive";
-        navBars[0].style.flexDirection = "column";
-      } else {
-        navBars[0].className = "navigation";
-        navBars[0].style.flexDirection = "row";
-      }
-
-      let navItems = document.getElementsByClassName("navigation-item");
-      for (let i = 0; i < navItems.length; i++) {
-        if (navItems[i].style.display === "block") {
-          if (i == 0) {
-            continue
-          }
-          navItems[i].style.display = "none";
-        } else {
-          navItems[i].style.display = "block";
-          navItems[i].style.lineHeight = "2em";
-          navItems[i].style.textAlign = "center";
-        }
-      }
-    }
-  </script>
+  <script src="/lib/navbar.js"></script>
   <nav class="sticky">
     <section class="navigation">
       <a href="javascript:void(0);" class="navigation-item" onclick="toggleNavButton()">
@@ -63,11 +43,6 @@
     </section>
   </footer>
   <script src="https://use.fontawesome.com/1ceb47dcca.js"></script>
-  {% if config.extra.googleanalytics %}
-  <!-- Asynchronous Google Analytics snippet -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39684817-1"></script>
-<script src="/lib/google_analytics.js"></script>
 
 {% endif %}
 </body>
