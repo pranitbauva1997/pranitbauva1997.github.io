@@ -4,7 +4,7 @@ description = ""
 template = "about_or_contact.html"
 +++
 
-The best way to contact me is via email (pranit [at] bauva [dot] com).
+The best way to contact me is via email (pranit@bauva.com).
 
 If you would like to meet me in person, feel free to drop a email or
 just text me on facebook and we can meet for beer!
