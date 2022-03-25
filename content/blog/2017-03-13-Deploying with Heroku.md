@@ -286,7 +286,7 @@ the app as you regularly would on your local development environment.
 Run `ruby app.rb`. When you try to open the application by visiting
 localhost:4567 you see that we have a Sinatra error.
 
-![Heroku 1](/images/blog/heroku/1.png){:.img-responsive}
+{{ image(src="/images/blog/heroku/1.png") }}
 
 Here we see that the table that needs to be in the database does not
 yet exist. You need to create it. Return to the command line, shut the
@@ -304,7 +304,7 @@ is the one that is at HEAD. In this case, this is the `pg` branch.
 
 Once you do this open the application by running `heroku open`.
 
-![Heroku 2](/images/blog/heroku/2.png){:.img-responsive}
+{{ image(src="/images/blog/heroku/2.png") }}
 
 You will see that we get an internal server error. Well if you recall,
 when running the application locally you had to run the database
