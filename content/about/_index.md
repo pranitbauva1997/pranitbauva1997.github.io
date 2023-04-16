@@ -1,5 +1,5 @@
 +++
-title = "About"
+title = "Pranit Bauva"
 template = "about_or_contact.html"
 +++
 
