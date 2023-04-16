@@ -3,9 +3,10 @@ title = "Pranit Bauva"
 template = "about_or_contact.html"
 +++
 
-I am the founder of [Nirah](https://nirah.app). Nirah helps
-technology companies deliver and process real-time webhooks reliably
-with great concern for security and privacy.
+I am the founder of [Nirah](https://nirah.app), a company
+that helps technology companies deliver and process real-time webhooks
+securely and reliably.
+
 
 Webhooks are HTTP requests
 sent by a server which needs to communicate about a state change for e.g
@@ -16,8 +17,8 @@ asking the other server if they have any information which is valuable
 for them, instead the flow would be that the other server will notify
 every server who is supposed to keep listening about information.
 
-I now help such companies which utilize the power of event-driven
-architectures so that they can focus on building
+I help technology companies which utilize event-driven
+architectures so that engineering teams can focus on building
 their core competitive advantage and outsource webhooks parts to Nirah.
 The long-term mission for Nirah is to make server-to-server communications
 better and would approach that mission one product at a time.
@@ -33,7 +34,7 @@ I have built the [chatbot](https://support.carousell.com/hc/en-us) for handling
 customer support tickets to help
 Carousell transition from Zendesk and thus implement custom journeys
 as required by business and also enable significant cost savings.
-</p>
+It has 50,000 daily users.
 
 Find out more about my past experiences on
 [LinkedIn](https://www.linkedin.com/in/pranitbauva/).
