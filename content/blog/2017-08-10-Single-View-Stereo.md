@@ -4,9 +4,6 @@ date = 2017-08-10
 
 [extra]
 mathjx = true
-
-[taxonomies]
-tags = ["tech", "computer-vision"]
 +++
 
 Stereo Vision is traditionally done with the help of two cameras which

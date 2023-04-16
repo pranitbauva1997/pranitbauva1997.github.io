@@ -1,9 +1,6 @@
 +++
 title = "One Up on Wall Street by Peter Lynch"
 date = 2018-08-19
-
-[taxonomies]
-tags = ["finance", "business"]
 +++
 
 A great book which I read in Summers '18 and have started applying his

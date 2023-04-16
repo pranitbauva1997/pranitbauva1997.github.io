@@ -1,9 +1,6 @@
 +++
 title = "Deploying with Heroku"
 date = 2017-03-13
-
-[taxonomies]
-tags = ["tech", "cloud-computing"]
 +++
 
 As their **About page** reads:

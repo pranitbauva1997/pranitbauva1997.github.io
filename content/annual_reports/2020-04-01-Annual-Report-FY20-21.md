@@ -1,9 +1,6 @@
 +++
 title = "Annual Report FY20-21"
 date = 2020-04-01
-
-[taxonomies]
-tags = ["annual-report"]
 +++
 
 This is the 10th anniversary of me installing Ubuntu on my laptop which changed the course of history of my life. Last year in April, I remembered it has been 9 years since I have switched to Linux full time. Nine years just just passed by so easily. It was almost like yesterday when I was waiting for the release of Ubuntu 11.04 LTS (Natty Narwhal).

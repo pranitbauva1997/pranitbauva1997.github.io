@@ -1,10 +1,6 @@
 +++
 title = "Cryptocurrencies aren't really a solution to our problems"
-description = ""
 date = 2018-04-14
-
-[taxonomies]
-tags = ["crypto", "finance"]
 +++
 
 Cryptocurrencies were alleged started because public lost trusts in banks

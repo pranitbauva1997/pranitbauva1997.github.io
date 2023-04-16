@@ -15,11 +15,6 @@ title = "Pranit Bauva | Home"
 highlight_code = true
 highlight_theme = "material-dark"
 
-taxonomies = [
-    { name = "tags", feed = true}
-]
-
-
 [extra]
 # Put all your custom variables here
 mathjax_enable = true

@@ -1,9 +1,6 @@
 +++
 title = "The Art of Money Getting by P. T. Barnum"
 date = 2019-08-13
-
-[taxonomies]
-tags = ["business"]
 +++
 # The Art of Money Getting
 

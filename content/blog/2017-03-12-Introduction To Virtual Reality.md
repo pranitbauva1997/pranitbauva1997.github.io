@@ -1,9 +1,6 @@
 +++
 title = "Introduction to Virtual Reality"
 date = 2017-03-12
-
-[taxonomies]
-tags = ["tech", "virtual-reality"]
 +++
 
 After hearing a lot of buzz about **VR (Virtual Reality)**, I thought it

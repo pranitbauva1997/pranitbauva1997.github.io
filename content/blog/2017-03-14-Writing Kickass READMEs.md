@@ -1,9 +1,6 @@
 +++
 title = "Writing Kickass READMEs"
 date = 2017-03-14
-
-[taxonomies]
-tags = ["tech"]
 +++
 
 Writing documentation for code is **extremely** important. Alas! I realized

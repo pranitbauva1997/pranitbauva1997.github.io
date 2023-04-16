@@ -1,9 +1,6 @@
 +++
 title = "HFT firms' profits are like commissions"
 date = 2017-07-27
-
-[taxonomies]
-tags = ["finance", "hft"]
 +++
 
 In **HFT** or **High Frequency Trading**, one buys and sells
