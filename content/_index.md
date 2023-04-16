@@ -1,5 +1,5 @@
 +++
-title = "Pranit Bauva"
+title = "Pranit Bauva | Founder & Investor"
 template = "about_or_contact.html"
 +++
 
