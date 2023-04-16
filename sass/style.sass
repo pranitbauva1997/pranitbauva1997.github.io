@@ -126,18 +126,18 @@ a:hover
   padding-right: 5px
 
 .section-content
-  max-width: 45%
+  max-width: 65%
   font-size: 1.1em
 
   // Change the article view width depending on screen width of the user agent
   @media (max-width: $big-tab-width) and (min-width: $tab-width)
-    max-width: 65%
-  @media (max-width: $tab-width) and (min-width: $small-tab-width)
-    max-width: 70%
-  @media (max-width: $small-tab-width) and (min-width: $big-phone-width)
     max-width: 75%
-  @media (max-width: $big-phone-width) and (min-width: $phone-width)
+  @media (max-width: $tab-width) and (min-width: $small-tab-width)
+    max-width: 75%
+  @media (max-width: $small-tab-width) and (min-width: $big-phone-width)
     max-width: 80%
+  @media (max-width: $big-phone-width) and (min-width: $phone-width)
+    max-width: 85%
   @media (max-width: $phone-width) and (min-width: $small-phone-width)
     max-width: 90%
   @media (max-width: $small-phone-width)
