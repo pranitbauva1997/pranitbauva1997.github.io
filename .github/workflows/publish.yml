@@ -11,7 +11,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: Zola Deploy to Pages with HTML minification
-        uses: pranitbauva1997/zola-deploy-action@v1.0
+        uses: pranitbauva1997/zola-deploy-action@master
         env:
           # Target branch
           PAGES_BRANCH: gh-pages
