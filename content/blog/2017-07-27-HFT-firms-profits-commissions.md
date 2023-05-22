@@ -105,7 +105,7 @@ at Rs. 10, so you buy them but you still have 800 apples to buy more,
 so you take your car and then go to market B where there are 900 apples
 available at Rs. 10.50, so you finish your order by buying 800 more apples.
 
-{{ image(src="/images/blog/hft-profits-commissions/1.jpg") }}
+{{ image(src="/images/blog/hft-profits-commissions/1.jpg", text="") }}
 
 ### Trading after HFT
 
@@ -115,7 +115,7 @@ about this and before you get into car and go to the next market, that rat
 goes to the market B buys all the apples at Rs. 10.50 and before you arrive
 there it offers to sell at Rs. 11 .
 
-{{ image(src="/images/blog/hft-profits-commissions/2.jpg") }}
+{{ image(src="/images/blog/hft-profits-commissions/2.jpg", text="") }}
 
 ### Putting it all together
 

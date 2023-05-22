@@ -28,7 +28,9 @@ Go was always on the back of my mind as it managed to make quite some noises. I 
 Elm is the reason I started loving frontend. I remember distinctly when starting out I had the task of building a sort of a Pull Request page which has a title input, description input, and submit button. I was so naive that I created something like this:
 
 
-![](https://paper-attachments.dropbox.com/s_368C598B0EF4456E1CF8F964B839CC28119DDA49CE0F0CF114FED0CBBABBC770_1660072813289_horrible_ui.png)
+{{ image(src="/images/annual_reports/FY20-21/1.png", text="An inquiry letter") }}
+
+![A bad design for a Pull Request feature]()
 
 
 I had been using GitHub for quite some while now and this just felt so horrible and it had so few elements to make mistakes. Only when I saw GitHub’s new issue page, I realized why it didn’t look as good as GitHub’s. From going to having very little design sense, I quickly transformed into making usable and not-so-ugly designs which I would consider a very good progress. Elm makes me want to do more and more of frontend programming. It’s a purely functional language with a unique architecture of defining a model to store state, the view function to operate on the state and generate HTML elements, update message passing mechanism to modify the state according to the user’s actions and a subscription function to listen to outside events. Imagining things this way seemed a lot more intuitive to me rather than writing HTML, CSS and JS. Plus, any mistake I made, elm compiler was kind enough to hold my hand through my mistakes and really take the pain out of debugging to make my life a chill breeze.

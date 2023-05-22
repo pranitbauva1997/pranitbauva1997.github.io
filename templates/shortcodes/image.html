@@ -1,1 +1,9 @@
-<img src="{{src}}" class="image">
+<div class="image-container">
+  <img
+    src="{{src}}"
+    alt="{{text}}"
+    class="image"
+    {% if width %}width="{{width}}"{% endif %}
+    {% if height %}height="{{height}}"{% endif %}
+  >
+</div>
