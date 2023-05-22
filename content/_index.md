@@ -7,6 +7,11 @@ I am the founder of [Nirah](https://nirah.app), a company
 that helps technology companies deliver and process real-time webhooks
 securely and reliably.
 
+I help technology companies which utilize event-driven
+architectures so that engineering teams can focus on building
+their core competitive advantage and outsource webhooks parts to Nirah.
+The long-term mission for Nirah is to make server-to-server communications
+better and would approach that mission one product at a time.
 
 Webhooks are HTTP requests
 sent by a server which needs to communicate about a state change for e.g
@@ -16,12 +21,6 @@ Webhooks make pooling redundant i.e. one server doesn't need to keep
 asking the other server if they have any information which is valuable
 for them, instead the flow would be that the other server will notify
 every server who is supposed to keep listening about information.
-
-I help technology companies which utilize event-driven
-architectures so that engineering teams can focus on building
-their core competitive advantage and outsource webhooks parts to Nirah.
-The long-term mission for Nirah is to make server-to-server communications
-better and would approach that mission one product at a time.
 
 I have built the
 [Reverse Penny Drop](https://docs.setu.co/data/bav/reverse-penny-drop/quickstart)
