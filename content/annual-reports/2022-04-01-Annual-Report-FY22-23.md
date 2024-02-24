@@ -222,7 +222,7 @@ We understood what was happening and we brewed our own plan to
 go against the establishment. This started with an innocent looking
 one page letter.
 
-{{ image(src="/images/annual_reports/FY22-23/letter_1.png", text="Letter for inquiry" width="720", height="1080") }}
+{{ image(src="/images/annual-reports/FY22-23/letter_1.png", text="Letter for inquiry" width="720", height="1080") }}
 
 The Managing Committee tried very hard to not answer the question
 by giving an illusion of answering the questions.
@@ -242,13 +242,13 @@ the interest of their own families.
 
 The below letter summarises the deal offered to the society:
 
-{{ image(src="/images/annual_reports/FY22-23/letter_2_1.png", text="Letter explaining the shitty deal" width="720", height="1080") }}
+{{ image(src="/images/annual-reports/FY22-23/letter_2_1.png", text="Letter explaining the shitty deal" width="720", height="1080") }}
 
-{{ image(src="/images/annual_reports/FY22-23/letter_2_2.png", text="Letter explaining the shitty deal" width="720", height="1080") }}
+{{ image(src="/images/annual-reports/FY22-23/letter_2_2.png", text="Letter explaining the shitty deal" width="720", height="1080") }}
 
-{{ image(src="/images/annual_reports/FY22-23/letter_2_3.png", text="Letter explaining the shitty deal" width="720", height="1080") }}
+{{ image(src="/images/annual-reports/FY22-23/letter_2_3.png", text="Letter explaining the shitty deal" width="720", height="1080") }}
 
-{{ image(src="/images/annual_reports/FY22-23/letter_2_4.png", text="Letter explaining the shitty deal" width="720", height="1080") }}
+{{ image(src="/images/annual-reports/FY22-23/letter_2_4.png", text="Letter explaining the shitty deal" width="720", height="1080") }}
 
 ### Courage to go against the establishment
 

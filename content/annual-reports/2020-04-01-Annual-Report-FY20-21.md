@@ -28,7 +28,7 @@ Go was always on the back of my mind as it managed to make quite some noises. I 
 Elm is the reason I started loving frontend. I remember distinctly when starting out I had the task of building a sort of a Pull Request page which has a title input, description input, and submit button. I was so naive that I created something like this:
 
 
-{{ image(src="/images/annual_reports/FY20-21/1.png", text="An inquiry letter") }}
+{{ image(src="/images/annual-reports/FY20-21/1.png", text="An inquiry letter") }}
 
 ![A bad design for a Pull Request feature]()
 

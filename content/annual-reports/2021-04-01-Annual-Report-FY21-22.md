@@ -58,7 +58,7 @@ worked properly. In the full year after release, we had only
 one downtime, and it worked correctly without any maintenance
 long after I was gone.
 
-{{ image(src="/images/annual_reports/FY21-22/carousell_chatbot.png", text="Carousell Support Chatbot", width="400", height="800") }}
+{{ image(src="/images/annual-reports/FY21-22/carousell_chatbot.png", text="Carousell Support Chatbot", width="400", height="800") }}
 
 Carousell's tech team is quite mature and a lot of things like
 CI/CD, logging, infra, etc were already setup with very
